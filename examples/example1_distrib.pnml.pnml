@@ -1,0 +1,290 @@
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+ <net id="PT1" type="http://www.pnml.org/version-2009/grammar/ptnet">
+  <page id="page0">
+    <place id="P0">
+     <graphics>
+      <position x="0" y="150.0"/>
+     </graphics>
+     <name>
+      <value>P0</value>
+     </name>
+     <initialMarking>
+      <value>1</value>
+     </initialMarking>
+    </place>
+    <place id="P3">
+     <graphics>
+      <position x="50" y="150.0"/>
+     </graphics>
+     <name>
+      <value>P3</value>
+     </name>
+     <initialMarking>
+      <value>0</value>
+     </initialMarking>
+    </place>
+    <place id="P4">
+     <graphics>
+      <position x="100" y="150.0"/>
+     </graphics>
+     <name>
+      <value>P4</value>
+     </name>
+     <initialMarking>
+      <value>0</value>
+     </initialMarking>
+    </place>
+    <place id="P5">
+     <graphics>
+      <position x="150" y="150.0"/>
+     </graphics>
+     <name>
+      <value>P5</value>
+     </name>
+     <initialMarking>
+      <value>0</value>
+     </initialMarking>
+    </place>
+    <place id="P6">
+     <graphics>
+      <position x="200" y="150.0"/>
+     </graphics>
+     <name>
+      <value>P6</value>
+     </name>
+     <initialMarking>
+      <value>0</value>
+     </initialMarking>
+    </place>
+    <place id="P7">
+     <graphics>
+      <position x="250" y="150.0"/>
+     </graphics>
+     <name>
+      <value>P7</value>
+     </name>
+     <initialMarking>
+      <value>0</value>
+     </initialMarking>
+    </place>
+    <place id="P8">
+     <graphics>
+      <position x="300" y="150.0"/>
+     </graphics>
+     <name>
+      <value>P8</value>
+     </name>
+     <initialMarking>
+      <value>0</value>
+     </initialMarking>
+    </place>
+    <transition id="T0">
+     <graphics>
+      <position x="0" y="240.0"/>
+     </graphics>
+     <name>
+      <value>T0</value>
+     </name>
+     <toolspecific tool="PTPN" version="0.1">
+      <time_function type="exponential">
+       <param name="lambda">
+         <value>0.25</value>
+       </param>
+      </time_function>
+     </toolspecific>
+    </transition>
+    <transition id="T5">
+     <graphics>
+      <position x="50" y="240.0"/>
+     </graphics>
+     <name>
+      <value>T5</value>
+     </name>
+     <toolspecific tool="PTPN" version="0.1">
+      <time_function type="interval">
+       <param name="min">
+         <value>0.0</value>
+       </param>
+       <param name="max">
+         <value>5.0</value>
+       </param>
+      </time_function>
+     </toolspecific>
+    </transition>
+    <transition id="T6">
+     <graphics>
+      <position x="100" y="240.0"/>
+     </graphics>
+     <name>
+      <value>T6</value>
+     </name>
+     <toolspecific tool="PTPN" version="0.1">
+      <time_function type="constant">
+       <param name="k">
+         <value>6.0</value>
+       </param>
+      </time_function>
+     </toolspecific>
+    </transition>
+    <transition id="T8">
+     <graphics>
+      <position x="150" y="240.0"/>
+     </graphics>
+     <name>
+      <value>T8</value>
+     </name>
+     <toolspecific tool="PTPN" version="0.1">
+      <time_function type="normal">
+       <param name="mu">
+         <value>8.0</value>
+       </param>
+       <param name="sigma">
+         <value>1.0</value>
+       </param>
+      </time_function>
+     </toolspecific>
+    </transition>
+    <transition id="T7">
+     <graphics>
+      <position x="200" y="240.0"/>
+     </graphics>
+     <name>
+      <value>T7</value>
+     </name>
+     <toolspecific tool="PTPN" version="0.1">
+      <time_function type="interval">
+       <param name="min">
+         <value>0.0</value>
+       </param>
+       <param name="max">
+         <value>7.0</value>
+       </param>
+      </time_function>
+     </toolspecific>
+    </transition>
+    <transition id="T9">
+     <graphics>
+      <position x="250" y="240.0"/>
+     </graphics>
+     <name>
+      <value>T9</value>
+     </name>
+     <toolspecific tool="PTPN" version="0.1">
+      <time_function type="constant">
+       <param name="k">
+         <value>0.0</value>
+       </param>
+      </time_function>
+     </toolspecific>
+    </transition>
+    <arc id="jm45WOsl" source="P0" target="T0">
+     <inscription>
+      <value>1</value>
+     </inscription>
+    </arc>
+    <arc id="Pj5ob9OE" source="T0" target="P3">
+     <inscription>
+      <value>1</value>
+     </inscription>
+     <toolspecific tool="PTPN" version="0.1">
+      <distribution id="0">
+        <probability>
+          <value>0.6667</value>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="5xSxwCY8" source="T0" target="P5">
+     <inscription>
+      <value>1</value>
+     </inscription>
+     <toolspecific tool="PTPN" version="0.1">
+      <distribution id="0">
+        <probability>
+          <value>0.3333</value>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="Pj5ob91A" source="T0" target="P4">
+     <inscription>
+      <value>1</value>
+     </inscription>
+     <toolspecific tool="PTPN" version="0.1">
+      <distribution id="1">
+        <probability>
+          <value>0.41176</value>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="5xSxwCJ7" source="T0" target="P6">
+     <inscription>
+      <value>1</value>
+     </inscription>
+     <toolspecific tool="PTPN" version="0.1">
+      <distribution id="1">
+        <probability>
+          <value>0.58824</value>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="ZBE0HUQW" source="P3" target="T5">
+     <inscription>
+      <value>1</value>
+     </inscription>
+    </arc>
+    <arc id="Ogoi4U3s" source="T5" target="P7">
+     <inscription>
+      <value>1</value>
+     </inscription>
+    </arc>
+    <arc id="aq8OG6Wc" source="P5" target="T6">
+     <inscription>
+      <value>1</value>
+     </inscription>
+    </arc>
+    <arc id="hAwgu8Vy" source="T6" target="P7">
+     <inscription>
+      <value>1</value>
+     </inscription>
+    </arc>
+    <arc id="sS56AKvr" source="P6" target="T8">
+     <inscription>
+      <value>1</value>
+     </inscription>
+    </arc>
+    <arc id="sQS6V4P3" source="T8" target="P8">
+     <inscription>
+      <value>1</value>
+     </inscription>
+    </arc>
+    <arc id="7rsUGdea" source="P4" target="T7">
+     <inscription>
+      <value>1</value>
+     </inscription>
+    </arc>
+    <arc id="BWlQpbdt" source="T7" target="P8">
+     <inscription>
+      <value>1</value>
+     </inscription>
+    </arc>
+    <arc id="6OTa9SfR" source="P7" target="T9">
+     <inscription>
+      <value>1</value>
+     </inscription>
+    </arc>
+    <arc id="j11ppkhK" source="P8" target="T9">
+     <inscription>
+      <value>1</value>
+     </inscription>
+    </arc>
+    <arc id="lNyUFcHK" source="T9" target="P0">
+     <inscription>
+      <value>1</value>
+     </inscription>
+    </arc>
+  </page>
+ </net>
+</pnml>
