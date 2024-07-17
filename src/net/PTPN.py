@@ -1,3 +1,5 @@
+#@Author: Simona Bernardi
+#@Date: 18/07/2024
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 #from typing import List
