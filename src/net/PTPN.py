@@ -1,5 +1,5 @@
 #@Author: Simona Bernardi
-#@Date: 18/07/2024
+#@Date: 19/07/2024
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 #from typing import List
@@ -127,7 +127,7 @@ class PTPN:
 			self.__arcs.append(arc)
 		
 		#Debug
-		print("PTPN model loaded.")	
+		#print("PTPN model loaded.")	
 	
 	#Debug purposes
 	def print_net(self):

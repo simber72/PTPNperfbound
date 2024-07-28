@@ -1,5 +1,5 @@
 #@Author: Simona Bernardi
-#@Date: 17/7/2024
+#@Date: 28/7/2024
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 #from typing import List
@@ -12,7 +12,7 @@ class ParamsExtractor:
 		self.__m0 = None
 		self.__b = None
 		self.__f = None
-		self.__r = None
+		self.__w = None
 		self.__delta = None
 		#Dictionary for mapping net infos to the net structures
 		self.__pid_to_dokid = dict()
@@ -51,11 +51,17 @@ class ParamsExtractor:
 	def get_f(self):
 		return self.__f
 
-	def get_r(self):
-		return self.__r
+	def get_w(self):
+		return self.__w
 
 	def get_delta(self):
 		return self.__delta
+
+	def get_pid_to_dokid(self):
+		return self.__pid_to_dokid
+
+	def get_tid_to_dokid(self):
+		return self.__tid_to_dokid
 
 	def retrieve_net_structure(self, ptpn : PTPN):
 
@@ -66,7 +72,7 @@ class ParamsExtractor:
 		self.__m0 = dok_array((1,len(places)),dtype=int)
 		self.__b = dok_array((len(places),len(trans)),dtype=int)
 		self.__f = dok_array((len(places),len(trans)),dtype=int)
-		self.__r = dok_array((len(trans),1),dtype=float)
+		self.__w = dok_array((len(trans),1),dtype=float)
 		self.__delta = dok_array((len(trans),1),dtype=float)
 		
 
@@ -78,7 +84,7 @@ class ParamsExtractor:
 		for i in range(len(trans)):
 			self.__tid_to_dokid.update({trans[i].get_id() : i})
 			#update r and delta
-			self.__r[i,0] = 1.0 #original transitions have weights 1
+			self.__w[i,0] = 1.0 #original transitions have weights 1
 			self.__delta[i,0] = trans[i].get_delay()
 
 		#Debug
@@ -109,7 +115,7 @@ class ParamsExtractor:
 			#Considering the post_set a net transformation is needed (new places/new transitions)
 			#PTPN->GeneralizedSPN
 			for d in post_set.keys():
-				print(d,post_set[d])
+				#print(d,post_set[d])
 				if d != None:
 					#Add a new place p with pid_p=tid + "_" + dist (must be unique!)
 					pid_p = tid + "_" + str(d)
@@ -129,9 +135,9 @@ class ParamsExtractor:
 						tid_tnew = pid_p + "_" + pid
 						#Update the mapping tid_to_idx
 						self.__tid_to_dokid.update({tid_tnew: len(self.__tid_to_dokid)})
-						#Resize r (+element): set "prob" as weight of the new transition tnew
-						self.__r.resize((len(self.__tid_to_dokid),1))
-						self.__r[self.__tid_to_dokid[tid_tnew],0] = prob
+						#Resize w (+element): set "prob" as weight of the new transition tnew
+						self.__w.resize((len(self.__tid_to_dokid),1))
+						self.__w[self.__tid_to_dokid[tid_tnew],0] = prob
 						#Resize delta (+element): set "0.0" as delay of the new transition tnew (immediate)
 						self.__delta.resize((len(self.__tid_to_dokid),1))
 						self.__delta[self.__tid_to_dokid[tid_tnew],0] = 0.0
@@ -171,7 +177,7 @@ class ParamsExtractor:
 		print(self.__f)
 
 		print("Transition weights: ")
-		print(self.__r)
+		print(self.__w)
 
 		print("Transition mean firing times: ")
 		print(self.__delta)

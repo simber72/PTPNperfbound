@@ -10,7 +10,7 @@ class LPsolver(ABC):
 	"""@Interface Solver API"""
 	
 	@abstractmethod
-	def generate_lp(self, aPTPN):
+	def populate_lp(self, aPTPN):
 		pass
 	
 	@abstractmethod
