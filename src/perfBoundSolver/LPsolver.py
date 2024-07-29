@@ -1,5 +1,5 @@
 #@Author: Simona Bernardi
-#@Date: 18/07/2024
+#@Date: 29/07/2024
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 #from typing import List
@@ -14,10 +14,6 @@ class LPsolver(ABC):
 		pass
 	
 	@abstractmethod
-	def solve_lp(self, aProb):
-		pass
-
-	@abstractmethod
-	def identify_critical_subnet(self, aPtpn_solution):
+	def solve_lp(self):
 		pass
 
