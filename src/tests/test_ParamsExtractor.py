@@ -10,7 +10,7 @@ it retrieves information of the PTPN by transforming it to a GenSPN
 import unittest
 import os
 from src.net.PTPN import PTPN
-from src.perfBoundSolver.ParamsExtractor import ParamsExtractor
+from src.solver.ParamsExtractor import ParamsExtractor
 
 path = "/examples/"
 net = "example1.pnml"
