@@ -1,5 +1,5 @@
 #@Author: Simona Bernardi
-#@Date: 01/08/2024
+#@Date: 02/08/2024
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 #from typing import List
@@ -191,7 +191,7 @@ class CPLEX_LPsolver(LPsolver):
 	def __check_belong_subnet(self,t,subnet_places,C):
 		pre_t = 0
 		post_t = 0
-		for p in subnet_places.keys():
+		for p in subnet_places:
 			if C[p,t] < 0:
 				pre_t += 1
 			elif C[p,t] > 0:
@@ -199,11 +199,11 @@ class CPLEX_LPsolver(LPsolver):
 		return pre_t > 0 and post_t > 0 
 		##############################################################
 
-	def __get_name(self,places,pid):
+	def __get_name(self, obj_list, id):
 
-		for pl in places:
-			if pl.get_id() == pid:
-				return pl.get_name()
+		for obj in obj_list:
+			if obj.get_id() == id:
+				return obj.get_name()
 		return None
 
 	def __identify_critical_subnet(self, opt_sol, ref, ptpn):
@@ -274,7 +274,10 @@ class CPLEX_LPsolver(LPsolver):
 			#Debug: display solutions
 			print("====================================================")
 			print("Solution status: ", self.__ct_prob.solution.get_status()) # 1=optimal solution found
-			print("Max cycle time ", self.__tr_name, ":" ,self.__ct_prob.solution.get_objective_value())				
+			print("Min cycle time ", self.__tr_name, ":" ,self.__ct_prob.solution.get_objective_value())	
+			#Update PTPN
+			self.__update_net(ptpn,"CT")
+
 		except CplexError as exc:
 			raise
 		
@@ -304,9 +307,46 @@ class CPLEX_LPsolver(LPsolver):
 		self.__generate_lpX()
 		##############################################################
 
-
+	def __update_net(self, ptpn: PTPN, metric):
+		#Update transition metric
+		trans = ptpn.get_transitions()
+		i = 0
+		found = False
+		while i < len(trans) and not found:
+			if trans[i].get_name() == self.__tr_name:
+				if metric == "X":
+					trans[i].set_bounds(dict({'Throughput': [self.__prob_type, self.__prob.solution.get_objective_value()]}))
+				else:
+					trans[i].set_bounds(dict({'Cycle time': ['min', self.__ct_prob.solution.get_objective_value()]}))
+				found = True 
+				#Debug
+				#print("PTPN updated: ", "Transition: ", trans[i].get_name(), "Bounds: ", trans[i].get_bounds())
+			i += 1
+		#Update subnet when cycle time has been computed
+		if metric == 'CT':
+			var = self.__ct_prob.variables.get_names()
+			values = self.__ct_prob.solution.get_values()
+			pid_mapping = self.__pe.get_pid_to_dokid()
+			tid_mapping = self.__pe.get_tid_to_dokid()
+			#Collecting places of the subnet
+			places = ptpn.get_places()	
+			
+			subnet_places_pid2dokid = dict()
+			for p in pid_mapping.keys():
+				if values[pid_mapping[p]] > 0.0:
+					subnet_places_pid2dokid.update({p:pid_mapping[p]})
+			subnet_places = set()
+			for pl in places:
+				if pl.get_id() in subnet_places_pid2dokid.keys():
+					subnet_places.add(pl)			
+			subnet_trans = set()
+			C = self.__pe.get_f() - self.__pe.get_b()
+			for tr in trans:
+				if self.__check_belong_subnet(tid_mapping[tr.get_id()], subnet_places_pid2dokid.values(), C):
+					subnet_trans.add(tr)					
+			ptpn.set_critical_subnet(dict({'places': subnet_places, 'trans': subnet_trans}))
+			
 	def solve_lp(self, ptpn: PTPN):
-
 		#Solve the model
 		print("Solving the LP problem...")
 
@@ -316,7 +356,9 @@ class CPLEX_LPsolver(LPsolver):
 			print("====================================================")
 			print("Solution status: ", self.__prob.solution.get_status()) # 1=optimal solution found
 			print("Throughput of ", self.__tr_name, ":" ,self.__prob.solution.get_objective_value())				
-
+			#Update PTPN
+			self.__update_net(ptpn,"X")
+			
 		except CplexError as exc:
 			raise
 
@@ -329,7 +371,7 @@ class CPLEX_LPsolver(LPsolver):
 				tr_name = self.__get_name(trans,k)
 				if tr_name == self.__tr_name:
 					t_ref=tid2dokid[k] 
-			#Idenfitication of the slowest subnet		
+			#Identification of the slowest subnet		
 			self.__identify_critical_subnet(values, t_ref, ptpn)
 		else:
 			print("The net is not live.")
@@ -337,7 +379,7 @@ class CPLEX_LPsolver(LPsolver):
 		##############################################################
 
 	def export_lp(self, pb, aFilename):
-		print("Export generated LP")
+		#print("Export generated LP")
 		pb.write(aFilename)
 		##############################################################
 
@@ -366,33 +408,14 @@ class CPLEX_LPsolver(LPsolver):
 		print("====================================================")
 
 	def print_lp_min_CT_solution(self,ptpn: PTPN):
-		#Slowest subnet (in the original PTPN) from the optimal solution
-		print("Solution values:")
-		var = self.__ct_prob.variables.get_names()
-		values = self.__ct_prob.solution.get_values()
-
-		dokid2pid,dokid2tid = self.__backward_mapping()
-		subnet_places = dict()
-		subnet_trans = dict()
-		for p in dokid2pid.keys():
-			if values[p] > 0.0:
-				subnet_places.update({p:dokid2pid[p]})
+		#Slowest subnet from the updated PTPN
 		print("Places of the slowest subnet:")
-		places = ptpn.get_places()
-		for p in subnet_places.values():
-			pl_name = self.__get_name(places,p)
-			if pl_name != None:
-				print(pl_name)
-		for t in dokid2tid.keys():
-			C = self.__pe.get_f()-self.__pe.get_b()
-			if self.__check_belong_subnet(t,subnet_places,C):
-				subnet_trans.update({t:dokid2tid[t]}) 
+		subnet = ptpn.get_critical_subnet()
+		for p in subnet['places']:
+			print(p.get_name())
 		print("Transitions of the slowest subnet:")
-		trans = ptpn.get_transitions()
-		for t in subnet_trans.values():
-			tr_name = self.__get_name(trans,t)
-			if tr_name != None:
-				print(tr_name)
+		for t in subnet['trans']:
+			print(t.get_name())
 		print("====================================================")
 
 

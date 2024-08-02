@@ -1,5 +1,5 @@
 #@Author: Simona Bernardi
-#@Date: 18/07/2024
+#@Date: 02/08/2024
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 #from typing import List
@@ -13,6 +13,13 @@ class Transition:
 		self.__name = name
 		self.__time_function = time_function
 		self.__params = params #dict()
+		self.__bounds = dict()
+
+	def set_bounds(self,bounds):
+		 self.__bounds.update(bounds)
+
+	def get_bounds(self):
+		return self.__bounds
 
 	def get_id(self):
 		return self.__id

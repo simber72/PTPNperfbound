@@ -1,11 +1,12 @@
 #@Author: Simona Bernardi
-#@Date: 19/07/2024
+#@Date: 02/08/2024
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 #from typing import List
 
 import string  #to generate random IDs
 from xml.dom import minidom
+import graphviz
 
 from src.net.Transition import Transition
 from src.net.Place import Place
@@ -25,6 +26,12 @@ class PTPN:
 		"""# @AssociationMultiplicity 1..*
 		# @AssociationKind Composition"""
 		self.__arcs = []
+
+	def set_critical_subnet(self,subnet):
+		self.__subnet = subnet
+
+	def get_critical_subnet(self):
+		return self.__subnet
 
 	def get_name(self):
 		return self.__name
@@ -169,11 +176,12 @@ class PTPN:
 
 	def export_pnml(self,filename):
 		"""
-		Export the PTPN model to (extended) pnml of the PTPN 
+		Export the PTPN model to  pnml (if bounds are computed it exports the bound results)
 		filename: filename.pnml is created
 		"""
 		#Heading
-		ptpn  = '<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">\n'
+		ptpn = '<?xml version="1.0" encoding="iso-8859-1"?>\n'
+		ptpn += '<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">\n'
 		ptpn += ' <net id="{0}" type="http://www.pnml.org/version-2009/grammar/ptnet">\n'.format(self.__net_id)
 		ptpn += '  <page id="{0}">\n'.format(self.__page_id)
 		#Places
@@ -201,13 +209,21 @@ class PTPN:
 			ptpn += '     <name>\n'
 			ptpn += '      <value>{0}</value>\n'.format(t.get_name())
 			ptpn += '     </name>\n'
-			ptpn += '     <toolspecific tool="PTPN" version="0.1">\n'
+			ptpn += '     <toolspecific tool="PTPNperfbound" version="0.1">\n'
 			ptpn += '      <time_function type="{0}">\n'.format(t.get_time_function())
 			for p, value in t.get_params().items():
 				ptpn += '       <param name="{0}">\n'.format(p)
 				ptpn += '         <value>{0}</value>\n'.format(value)
 				ptpn += '       </param>\n'
 			ptpn += '      </time_function>\n'
+			bounds = t.get_bounds()
+			if bounds:
+				ptpn += '  <bounds>\n'
+				for b in bounds.keys():
+					ptpn += '    <bound>\n'
+					ptpn += '     <metric>{0}</metric> <statQ>{1}</statQ> <value>{2}</value>\n'.format(b,bounds[b][0],bounds[b][1])
+					ptpn += '    </bound>\n'
+				ptpn += '  </bounds>\n'
 			ptpn += '     </toolspecific>\n'
 			ptpn += '    </transition>\n'
 			positionx += 50
@@ -220,7 +236,7 @@ class PTPN:
 			did = a.get_dist_id()
 			if (did != None):
 				#PTPN arcs
-				ptpn += '     <toolspecific tool="PTPN" version="0.1">\n'
+				ptpn += '     <toolspecific tool="PTPNperfbound" version="0.1">\n'
 				ptpn += '      <distribution id="{0}">\n'.format(did)
 				ptpn += '        <probability>\n'
 				ptpn += '          <value>{0}</value>\n'.format(a.get_prob())
@@ -230,12 +246,55 @@ class PTPN:
 			ptpn += '    </arc>\n'
 		#Closings
 		ptpn += '  </page>\n'
+		if self.__subnet:
+			ptpn += '  <toolspecific tool="PTPNperfbound" version="0.1">\n'
+			ptpn += '   <critical_subnet>\n'
+			for p in self.__subnet['places']:
+				ptpn += '    <pl id="{0}"/>\n'.format(p.get_id())
+			for t in self.__subnet['trans']:
+				ptpn += '    <tr id="{0}"/>\n'.format(t.get_id())
+			ptpn += '   </critical_subnet>\n'
+			ptpn += '  </toolspecific>\n'
 		ptpn += ' </net>\n'
 		ptpn += '</pnml>'
 		#Write to file
 		f = open(filename, "w")
 		f.write(ptpn)
 		f.close()
+
+	def export_dot(self,filename):
+		dot = graphviz.Digraph(comment=self.__name)
+		dot.attr(rankdir='TB')  # vertical
+		for p in self.__places:			
+			if p in self.__subnet['places']:
+				dot.node(p.get_id(), shape='circle', label="•"*p.get_initial_marking(), xlabel=p.get_name(), color="red")
+			else:
+				dot.node(p.get_id(), shape='circle', label="point"*p.get_initial_marking(), xlabel=p.get_name())
+		for t in self.__transitions:
+			if t in self.__subnet['trans']:
+				if t.get_bounds():
+					label = "bounds:\n Thr:" + str(t.get_bounds()['Throughput']) + "\n CT:" + str(t.get_bounds()['Cycle time'])
+					dot.node(t.get_id(), shape='rect', color="red", xlabel=label)
+				else:
+					dot.node(t.get_id(), shape='rect', color="red")
+			else:
+				dot.node(t.get_id(), shape='rect')
+		for a in self.__arcs:
+			target = a.get_target()
+			if target in self.__transitions:
+				#Input arc
+				dot.edge(a.get_source().get_id(), target.get_id(), label=str(a.get_mult()))
+			else:
+				#Output arc
+				if a.get_dist_id() != None:
+					dot.node(a.get_id(), shape='point',label="")
+					dot.edge(a.get_source().get_id(), a.get_id(), label=str([a.get_dist_id(),a.get_prob()]), style='dashed')
+					dot.edge(a.get_id(), target.get_id(), label=str(a.get_mult()))
+				else:
+					dot.edge(a.get_source().get_id(), target.get_id(), label=str(a.get_mult()))
+
+		dot.render(filename)
+
 
 
 
