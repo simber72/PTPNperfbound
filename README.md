@@ -9,12 +9,13 @@ The computation is performed using Linear Programming techniques.
 
 ## Structure of the repository
 - *examples*: PTPN model examples and results
-- *requirements.txt*: Python libraries required to run the solver
-- *LICENCE*: licence file
+- *src*: source files 
+- *doc*: documentation (see [Solver modules](https://github.com/simber72/PTPNperfbound/blob/main/Solver_modules.md))
+- *LICENSE*: license file
 - *README.md*: this file
 - *README.txt*: short explanation of the solver
+- *requirements.txt*: Python libraries required to run the solver
 - *setup.py*: setup to package the Python modules and distribute the package
-- *src*: source files (see [Solver modules](https://github.com/simber72/PTPNperfbound/blob/main/Solver_modules.md))
 
 ## Dependences
 The optimization problems are solved using IBM CPLEX Studio or CPLEX Studio Community (up to 1000 variables/ contraints). 
