@@ -14,7 +14,7 @@ The computation is performed using Linear Programming techniques.
 - *README.md*: this file
 - *README.txt*: short explanation of the solver
 - *setup.py*: setup to package the Python modules and distribute the package
-- *src*: source files (see [Solver modules](https://github.com/simber72/PTPNperfbound/Solver_modules.md))
+- *src*: source files (see [Solver modules]([https://github.com/simber72/PTPNperfbound/](https://github.com/simber72/PTPNperfbound/blob/main/Solver_modules.md))
 
 ## Dependences
 The optimization problems are solved using IBM CPLEX Studio or CPLEX Studio Community (up to 1000 variables/ contraints). 
