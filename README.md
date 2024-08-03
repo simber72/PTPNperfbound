@@ -8,6 +8,8 @@ The solver computes:
 The computation is performed using Linear Programming techniques.
 
 ## Structure of the repository
+==WIP....==
+
 - *doc*: documentation (see [Solver modules](https://github.com/simber72/PTPNperfbound/blob/main/doc/Solver_modules.md))
 - *examples*: PTPN model examples and results
 - *src*: source files 
@@ -27,7 +29,7 @@ It is also possible to install cplex/docplex library with ```pip```
 (included in the ```requirements.txt```).
 
 ## How to install
-WIP....
+==WIP....==
 
 The solver can currently run with Python3 (versions 3.8/3.9/3.10).
 It has been tested with Python 3.10.
@@ -50,7 +52,7 @@ to the current path:
 ```export PYTHONPATH=.```
 
 ## How to use
-WIP....
+==WIP....==
 
 The solver can be run using a Command Line Inferface (CLI):
 
