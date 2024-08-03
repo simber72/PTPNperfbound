@@ -1,6 +1,6 @@
 """
 @Author: Simona Bernardi
-@Date: 19/07/2024
+@Date: 03/08/2024
 
 It tests the src/net module: 
 - import/export/print functionalities of PTPN class

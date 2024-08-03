@@ -1,4 +1,6 @@
-cplex==22.1.1.0
-scipy==1.14.0
-setuptools==65.5.0
-click==8.1.7
+click
+cplex
+docplex
+graphviz
+numpy  
+scipy
