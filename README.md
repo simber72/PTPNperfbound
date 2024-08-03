@@ -10,7 +10,7 @@ The computation is performed using Linear Programming techniques.
 ## Structure of the repository
 - *examples*: PTPN model examples and results
 - *src*: source files 
-- *doc*: documentation (see [Solver modules](https://github.com/simber72/PTPNperfbound/blob/main/Solver_modules.md))
+- *doc*: documentation (see [Solver modules](https://github.com/simber72/PTPNperfbound/blob/main/doc/Solver_modules.md))
 - *LICENSE*: license file
 - *README.md*: this file
 - *README.txt*: short explanation of the solver
