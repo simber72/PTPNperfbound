@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PTPNperfbound"
+version = "0.0.1"
+requires-python = ">=3.8"
+authors = [
+  {name = "Simona Bernardi", email = "simonab@unizar.es"}
+]
+maintainers = [
+  {name = "Simona Bernardi", email = "simonab@unizar.es"}
+]
+description = "Performance bound solver for Probabilistic Timed Petri Nets"
+readme = "README.txt"
+license = {file = "LICENSE.txt", content-type = "text/markdown"}
+keywords = ["PTPN", "LPP", "performance", "bounds", "slowest subnet"]
+classifiers = [
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Operating System :: OS Independent"
+]
+
+[project.urls]
+Repository = "https://github.com/simber72/PTPNperfbound"
+
+[project.scripts]
+ptpnbound = "src.ptpnbound:ptpnbound"
