@@ -9,7 +9,6 @@ The computation is performed using Linear Programming techniques.
 
 ## Structure of the repository
 
-
 - *dist*: distributions (in ```Wheel``` format and zipped ```tar.gz```)
 - *doc*: documentation (see [Solver modules](https://github.com/simber72/PTPNperfbound/blob/main/doc/Solver_modules.md))
 - *examples*: PTPN model examples and results
@@ -31,13 +30,11 @@ Besides other Python external libraries are needed, which can be installed with
 
 The solver can currently run with Python3 (versions 3.8/3.9/3.10).
 
-1. Install a virtual environment of Python3:
+0. Clone or download this repository.
 
-```$ python3 -m venv venv```
+1. Install a virtual environment of Python3 (one of the versions indicated above):
 
-and activate it:
-
-```$ source venv/bin/activate```
+```$ python3 -m venv venv``` ...and activate it: ```$ source venv/bin/activate```
 
 2. Update the pip and setuptools versions:
 
@@ -47,21 +44,20 @@ and activate it:
 
 ```$ pip install -r requirements.txt``` 
 
-4. The package can be easily installed from the PyPi repository using the command:
-
-```$ pip install PTPNperfbound``` 
-
-In case you clone (or download) this repository, you can install the library using the command:
-
-```$ pip install dist/PTPNperfbound-0.0.1-py3-none-any.whl```
-
-3. Move to the ```PTPNperfbound``` directory and set the Python path environment variable 
+4. Move to the ```PTPNperfbound``` directory and set the Python path environment variable 
 to the current path:
 
 ```export PYTHONPATH=.```
 
-## How to use
+5.(optional) The package can be installed from the PyPi repository using the command:
 
+```$ pip install PTPNperfbound``` 
+
+or you can install the library using the command:
+
+```$ pip install dist/PTPNperfbound-0.0.1-py3-none-any.whl```
+
+## How to use
 The solver can be run using a Command Line Inferface (CLI):
 
 ```ptpnbound --help
@@ -78,6 +74,9 @@ Options:
 where ```NAME``` is the pathname of the PTPN model (.pnml) and ```TNAME``` is the name of the 
 transition of reference for the bound computation. 
 
+In case the last installation step (5.) has not been performed, you can launch the CLI as follows:
+
+```python3 src/ptpnbound.py --help```
 
 ## References
 S. Bernardi, J. Campos, "A min-max problem for the computation of the cycle time lower bound in interval-based Time Petri Nets," IEEE Transactions on Systems, Man, and Cybernetics: Systems, 43(5), September 2013.
