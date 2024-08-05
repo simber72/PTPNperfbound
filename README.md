@@ -8,43 +8,52 @@ The solver computes:
 The computation is performed using Linear Programming techniques.
 
 ## Structure of the repository
-==WIP....==
 
+
+- *dist*: distributions (in ```Wheel``` format and zipped ```tar.gz```)
 - *doc*: documentation (see [Solver modules](https://github.com/simber72/PTPNperfbound/blob/main/doc/Solver_modules.md))
 - *examples*: PTPN model examples and results
-- *src*: source files 
+- *src*: source files (solver modules)
+- *tests*: source files (test scripts)
 - *LICENSE*: license file
 - *README.md*: this file
 - *README.txt*: short explanation of the solver
 - *requirements.txt*: Python libraries required to run the solver
-- *setup.py*: setup to package the Python modules and distribute the package
+- *pyproject.toml*: setup to package the Python modules and distribute the package
 
 ## Dependences
-The optimization problems are solved using IBM CPLEX Studio or CPLEX Studio Community (up to 1000 variables/ contraints). 
-Thus, ```cplex``` library need to be installed first.
+- ```cplex```: the optimization problems are solved using IBM CPLEX Studio or CPLEX Studio Community (up to 1000 variables/ contraints). 
 
-IBM CPLEX Studio is available at: https://www.ibm.com/es-es/products/ilog-cplex-optimization-studio
-
-It is also possible to install cplex/docplex library with ```pip``` 
-(included in the ```requirements.txt```).
+Besides other Python external libraries are needed, which can be installed with
+```pip```: all the dependencies are included in the  ```requirements.txt```).
 
 ## How to install
-==WIP....==
 
 The solver can currently run with Python3 (versions 3.8/3.9/3.10).
-It has been tested with Python 3.10.
 
-1. Install the libraries required to run the solver:
+1. Install a virtual environment of Python3:
+
+```$ python3 -m venv venv```
+
+and activate it:
+
+```$ source venv/bin/activate```
+
+2. Update the pip and setuptools versions:
+
+```python3 -m pip install --upgrade pip setuptools```
+
+3. Install the libraries required to run the solver:
 
 ```$ pip install -r requirements.txt``` 
 
-2. The package can be easily installed from the PyPi repository using the command:
+4. The package can be easily installed from the PyPi repository using the command:
 
 ```$ pip install PTPNperfbound``` 
 
 In case you clone (or download) this repository, you can install the library using the command:
 
-```$ pip install dist/XXXX.whl```
+```$ pip install dist/PTPNperfbound-0.0.1-py3-none-any.whl```
 
 3. Move to the ```PTPNperfbound``` directory and set the Python path environment variable 
 to the current path:
@@ -52,7 +61,6 @@ to the current path:
 ```export PYTHONPATH=.```
 
 ## How to use
-==WIP....==
 
 The solver can be run using a Command Line Inferface (CLI):
 

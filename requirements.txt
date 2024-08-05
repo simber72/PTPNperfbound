@@ -1,5 +1,4 @@
 click
 cplex
-docplex
 graphviz
 scipy
