@@ -16,7 +16,7 @@ import dijkstar
 import graphviz
 
 import string  #to generate random IDs
-
+from collections.abc import Mapping
 
 class ProbabilisticTimePetriNet:
     """
@@ -272,10 +272,18 @@ class ProbabilisticTimePetriNet:
             ptpn += '     </name>\n'
             ptpn += '     <toolspecific tool="PTPN" version="0.1">\n'
             ptpn += '      <time_function type="{0}">\n'.format(time_func_type)
-            for param, value in zip(parameters.keys(), parameters.values()):
-                ptpn += '       <param name="{0}">\n'.format(param)
-                ptpn += '         <value>{0}</value>\n'.format(value)
+            if isinstance(parameters,list):
+                ptpn += '       <param name="min">\n'
+                ptpn += '         <value>{0}</value>\n'.format(parameters[0])
                 ptpn += '       </param>\n'
+                ptpn += '       <param name="max">\n'
+                ptpn += '         <value>{0}</value>\n'.format(parameters[1])
+                ptpn += '       </param>\n'
+            if isinstance(parameters,Mapping):
+                for param, value in zip(parameters.keys(), parameters.values()):
+                    ptpn += '       <param name="{0}">\n'.format(param)
+                    ptpn += '         <value>{0}</value>\n'.format(value)
+                    ptpn += '       </param>\n'
             ptpn += '      </time_function>\n'
             ptpn += '     </toolspecific>\n'
             ptpn += '    </transition>\n'
