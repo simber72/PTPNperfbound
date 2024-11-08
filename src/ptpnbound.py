@@ -18,12 +18,20 @@ def transition_exist(ptpn,tname):
             return True
     return False
 
+def get_transition_id(ptpn,tname):
+    tr_list = ptpn.get_transitions()
+    for tr in tr_list:
+        if tr.get_name() == tname:
+            return tr.get_id()
+    return -1
+
+
 @click.command()
 @click.argument('name')
 @click.argument('tname')
 @click.option('-lp','--lpmodel', type=str, help="LP model files (CPLEX  models - lp format)")
 @click.option('-lpo','--lpoutput', type=str, help="Result files (CPLEX model results - xml format)")
-@click.option('-o','--output', type=(str,str), help="Result file: name format (available formats: pnml, dot, txt)")
+@click.option('-o','--output', type=(str,str), help="Result file: name format (available formats: pnml, dot)")
 @click.option('-v','--verbose', is_flag=True, show_default=True, default=False, help="Print results to stdin")
 def ptpnbound(name, tname, lpmodel, lpoutput, output, verbose):
 
@@ -38,9 +46,10 @@ def ptpnbound(name, tname, lpmodel, lpoutput, output, verbose):
         if not transition_exist(ptpn,tname):
             click.echo(f"Oops!  The transition {tname} does not exists. Terminate.")
         else:
+            tid = get_transition_id(ptpn,tname)
             click.echo(f"Computing max throughput/min cycle time of transition: {tname}")
             #Generate LP-max problem
-            lpgen = CPLEX_LPsolver(tname,'max')
+            lpgen = CPLEX_LPsolver(tname,tid,'max')
             lpgen.populate_lp(ptpn)
             #Solve LP
             click.echo("===============================================================")
@@ -62,7 +71,7 @@ def ptpnbound(name, tname, lpmodel, lpoutput, output, verbose):
                     filename = os.path.join(os.getcwd(), name + "_lp_CT_sol.xml")
                     lpgen.export_lp_solution(lpgen.get_LpminCT(), filename)
 
-            #Save the results in the PTPN model (pnml/dot?)
+            #Save the results in the PTPN model (pnml/dot)
             if output:
                 if output[1] == 'pnml':
                     filename = os.path.join(os.getcwd(), output[0] + ".pnml")
@@ -73,8 +82,6 @@ def ptpnbound(name, tname, lpmodel, lpoutput, output, verbose):
                     print("Export to graphiz .dot WIP")
                     filename = os.path.join(os.getcwd(), output[0] + ".dot")
                     ptpn.export_dot(filename)
-                elif output[1] == 'txt':
-                    print("Export to a textual specification like PlantUML TBD")
                 else:
                     click.echo(f"{output[1]} is not a valid format")
 

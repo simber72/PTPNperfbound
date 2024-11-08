@@ -15,8 +15,9 @@ from src.net.PTPN import PTPN
 class CPLEX_LPsolver(LPsolver):
 	"""Uses CPLEX API"""
 
-	def __init__(self, tr_name, type_of_prob):
+	def __init__(self, tr_name, tr_id, type_of_prob):
 		self.__tr_name = tr_name
+		self.__tr_id = tr_id
 		#Type of problem: min/max
 		self.__prob_type = type_of_prob
 		self.__prob = cplex.Cplex() #LP max X
@@ -101,7 +102,8 @@ class CPLEX_LPsolver(LPsolver):
 
 			for k in tid2dokid.keys(): #throughput variables
 				v_names.append('x' + str(tid2dokid[k]))
-				if k == self.__tr_name:
+				#get the id of the tr_name!!
+				if k == self.__tr_id:
 					coef.append(1.0)
 				else:
 					coef.append(0.0)
@@ -292,7 +294,7 @@ class CPLEX_LPsolver(LPsolver):
 		#set problem name
 		self.__prob.objective.set_name("obj" + self.__tr_name)
 		#Debug
-		#print("Problem name:", self.__prob.objective.get_name())
+		print("Problem name:", self.__prob.objective.get_name())
 
 		#set type of problem
 		if self.__prob_type == "min":

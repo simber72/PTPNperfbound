@@ -1,5 +1,5 @@
 #@Author: Simona Bernardi
-#@Date: 02/08/2024
+#@Date: 03/08/2024
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 #from typing import List
@@ -26,6 +26,7 @@ class PTPN:
 		"""# @AssociationMultiplicity 1..*
 		# @AssociationKind Composition"""
 		self.__arcs = []
+		self.__subnet = None
 
 	def set_critical_subnet(self,subnet):
 		self.__subnet = subnet
@@ -267,31 +268,31 @@ class PTPN:
 		dot.attr(rankdir='TB')  # vertical
 		for p in self.__places:			
 			if p in self.__subnet['places']:
-				dot.node(p.get_id(), shape='circle', label="•"*p.get_initial_marking(), xlabel=p.get_name(), color="red")
+				dot.node(p.get_name(), shape='circle', label="•"*p.get_initial_marking(), xlabel=p.get_name(), color="red")
 			else:
-				dot.node(p.get_id(), shape='circle', label="point"*p.get_initial_marking(), xlabel=p.get_name())
+				dot.node(p.get_name(), shape='circle', label="point"*p.get_initial_marking(), xlabel=p.get_name())
 		for t in self.__transitions:
 			if t in self.__subnet['trans']:
 				if t.get_bounds():
 					label = "bounds:\n Thr:" + str(t.get_bounds()['Throughput']) + "\n CT:" + str(t.get_bounds()['Cycle time'])
-					dot.node(t.get_id(), shape='rect', color="red", xlabel=label)
+					dot.node(t.get_name(), shape='rect', color="red", xlabel=label)
 				else:
-					dot.node(t.get_id(), shape='rect', color="red")
+					dot.node(t.get_name(), shape='rect', color="red")
 			else:
-				dot.node(t.get_id(), shape='rect')
+				dot.node(t.get_name(), shape='rect')
 		for a in self.__arcs:
 			target = a.get_target()
 			if target in self.__transitions:
 				#Input arc
-				dot.edge(a.get_source().get_id(), target.get_id(), label=str(a.get_mult()))
+				dot.edge(a.get_source().get_name(), target.get_name(), label=str(a.get_mult()))
 			else:
 				#Output arc
 				if a.get_dist_id() != None:
 					dot.node(a.get_id(), shape='point',label="")
-					dot.edge(a.get_source().get_id(), a.get_id(), label=str([a.get_dist_id(),a.get_prob()]), style='dashed')
-					dot.edge(a.get_id(), target.get_id(), label=str(a.get_mult()))
+					dot.edge(a.get_source().get_name(), a.get_id(), label=str([a.get_dist_id(),a.get_prob()]), style='dashed')
+					dot.edge(a.get_id(), target.get_name(), label=str(a.get_mult()))
 				else:
-					dot.edge(a.get_source().get_id(), target.get_id(), label=str(a.get_mult()))
+					dot.edge(a.get_source().get_name(), target.get_name(), label=str(a.get_mult()))
 
 		dot.render(filename)
 
