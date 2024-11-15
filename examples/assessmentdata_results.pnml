@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
 <pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
  <net id="XZUFBWqL" type="http://www.pnml.org/version-2009/grammar/ptnet">
   <page id="OgnPXttK">
@@ -272,7 +273,7 @@
      <name>
       <text>Sweep the kitchen and dust the living room</text>
      </name>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <time_function type="gamma">
        <param name="k">
          <text>4.888786722457527</text>
@@ -284,49 +285,11 @@
          <text>20.134640272059574</text>
        </param>
       </time_function>
+      <bound metric="Throughput" statQ="max">
+       <text>0.0</text>
+      </bound>
      </toolspecific>
     </transition>
-    <arc id="3DgfFkfJ" source="BisNxgAo" target="yWq67CiD">
-     <inscription>
-      <text>1</text>
-     </inscription>
-    </arc>
-    <arc id="uHC6lZKj" source="yWq67CiD" target="Yop6QJbt">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.9794117647058823</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="GQAcR7E8" source="yWq67CiD" target="zUXC6SmX">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.014705882352941176</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="gbp5k7Hy" source="yWq67CiD" target="qVG8os6i">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.0058823529411764705</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
     <transition id="korxKw0u">
      <graphics>
       <position x="50" y="240.0"/>
@@ -334,7 +297,7 @@
      <name>
       <text>Obtain a set of medicines and a weekly medicine dispenser, fill as per directions</text>
      </name>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
          <text>5.278648125601409</text>
@@ -345,35 +308,6 @@
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="iB5wP2pH" source="Yop6QJbt" target="korxKw0u">
-     <inscription>
-      <text>1</text>
-     </inscription>
-    </arc>
-    <arc id="kL3emg2G" source="korxKw0u" target="zUXC6SmX">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.9821958456973294</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="f466Hos1" source="korxKw0u" target="Fxa4YAtY">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.017804154302670624</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
     <transition id="2lksDdrc">
      <graphics>
       <position x="100" y="240.0"/>
@@ -381,7 +315,7 @@
      <name>
       <text>Write a birthday card, enclose a check and address an envelope</text>
      </name>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <time_function type="gamma">
        <param name="k">
          <text>6.67254998246216</text>
@@ -395,47 +329,6 @@
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="9a614mQB" source="zUXC6SmX" target="2lksDdrc">
-     <inscription>
-      <text>1</text>
-     </inscription>
-    </arc>
-    <arc id="xw4Hy7s5" source="2lksDdrc" target="Fxa4YAtY">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.9647058823529412</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="YlVGXfzA" source="2lksDdrc" target="qVG8os6i">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.03235294117647059</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="yOIOOvOm" source="2lksDdrc" target="8XC73r9t">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.0029411764705882353</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
     <transition id="lW2p09Wv">
      <graphics>
       <position x="150" y="240.0"/>
@@ -443,7 +336,7 @@
      <name>
       <text>Find the appropriate DVD and watch the corresponding news clip</text>
      </name>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
          <text>6.249229027614529</text>
@@ -454,71 +347,6 @@
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="UuUeDCZE" source="Fxa4YAtY" target="lW2p09Wv">
-     <inscription>
-      <text>1</text>
-     </inscription>
-    </arc>
-    <arc id="7DGsb8TC" source="lW2p09Wv" target="qVG8os6i">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.987987987987988</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="f7QRez3V" source="lW2p09Wv" target="S6huLT5I">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.003003003003003003</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="5lXCku87" source="lW2p09Wv" target="zUXC6SmX">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.003003003003003003</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="LbLaU4cF" source="lW2p09Wv" target="zuTBtLzz">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.003003003003003003</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="IfVCJsmN" source="lW2p09Wv" target="Wt2hJdke">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.003003003003003003</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
     <transition id="GSROs1vy">
      <graphics>
       <position x="200" y="240.0"/>
@@ -526,7 +354,7 @@
      <name>
       <text>Obtain a watering can and water all plants in the living space</text>
      </name>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
          <text>4.195066746315348</text>
@@ -537,59 +365,6 @@
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="vJobDtjZ" source="qVG8os6i" target="GSROs1vy">
-     <inscription>
-      <text>1</text>
-     </inscription>
-    </arc>
-    <arc id="12QpQT97" source="GSROs1vy" target="Wt2hJdke">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.892128279883382</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="36nNqIr0" source="GSROs1vy" target="zuTBtLzz">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.09329446064139942</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="8L4Q2eTm" source="GSROs1vy" target="8XC73r9t">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.011661807580174927</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="tCOOBsyH" source="GSROs1vy" target="i3HmwjPF">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.0029154518950437317</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
     <transition id="3A5oXorG">
      <graphics>
       <position x="250" y="240.0"/>
@@ -597,7 +372,7 @@
      <name>
       <text>Answer the phone and respond to questions pertaining to the video from task 4</text>
      </name>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
          <text>4.989705820787425</text>
@@ -608,71 +383,6 @@
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="56hCevGY" source="Wt2hJdke" target="3A5oXorG">
-     <inscription>
-      <text>1</text>
-     </inscription>
-    </arc>
-    <arc id="tMwDfDb2" source="3A5oXorG" target="zuTBtLzz">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.9647435897435898</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="naMp3Een" source="3A5oXorG" target="8XC73r9t">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.022435897435897436</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="GxILGhz8" source="3A5oXorG" target="qeSEwyT9">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.00641025641025641</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="iRU3lCKH" source="3A5oXorG" target="M2huexCe">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.003205128205128205</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="IeYnJWen" source="3A5oXorG" target="qVG8os6i">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.003205128205128205</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
     <transition id="PxGegREh">
      <graphics>
       <position x="300" y="240.0"/>
@@ -680,7 +390,7 @@
      <name>
       <text>Prepare a cup of soup using the microwave</text>
      </name>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
          <text>5.948707350694023</text>
@@ -691,47 +401,6 @@
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="XUiJ3yAx" source="zuTBtLzz" target="PxGegREh">
-     <inscription>
-      <text>1</text>
-     </inscription>
-    </arc>
-    <arc id="SfqbsDR5" source="PxGegREh" target="8XC73r9t">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.9910179640718563</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="5mqSxwo2" source="PxGegREh" target="Wt2hJdke">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.005988023952095809</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="OVjhDPkd" source="PxGegREh" target="zUXC6SmX">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.0029940119760479044</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
     <transition id="wM7mNKC3">
      <graphics>
       <position x="350" y="240.0"/>
@@ -739,7 +408,7 @@
      <name>
       <text>Pick a complete outfit for an interview from a selection of clothing</text>
      </name>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
          <text>4.312584119477973</text>
@@ -750,59 +419,6 @@
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="DtvZeSeL" source="8XC73r9t" target="wM7mNKC3">
-     <inscription>
-      <text>1</text>
-     </inscription>
-    </arc>
-    <arc id="27d8Ym7W" source="wM7mNKC3" target="UWBXPj5Q">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.9702380952380952</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="PgSYJGVR" source="wM7mNKC3" target="i3HmwjPF">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.023809523809523808</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="dV77xChQ" source="wM7mNKC3" target="C4BpMBJL">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.002976190476190476</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="ekTc6Paf" source="wM7mNKC3" target="qeSEwyT9">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.002976190476190476</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
     <transition id="ExQhgsbf">
      <graphics>
       <position x="400" y="240.0"/>
@@ -810,7 +426,7 @@
      <name>
       <text>Check the wattage of a desk lamp and replace the bulb</text>
      </name>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
          <text>4.525812480190735</text>
@@ -821,47 +437,6 @@
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="G6DuDdy6" source="UWBXPj5Q" target="ExQhgsbf">
-     <inscription>
-      <text>1</text>
-     </inscription>
-    </arc>
-    <arc id="080rxP4o" source="ExQhgsbf" target="i3HmwjPF">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.9755351681957186</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="p9r0CYt8" source="ExQhgsbf" target="C4BpMBJL">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.01834862385321101</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="tR4GUWzy" source="ExQhgsbf" target="M2huexCe">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.0061162079510703364</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
     <transition id="efo3liSe">
      <graphics>
       <position x="450" y="240.0"/>
@@ -869,7 +444,7 @@
      <name>
       <text>Wash hands with soap at the kitchen sink</text>
      </name>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
          <text>3.694881228230969</text>
@@ -880,47 +455,6 @@
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="o4g4X8ix" source="i3HmwjPF" target="efo3liSe">
-     <inscription>
-      <text>1</text>
-     </inscription>
-    </arc>
-    <arc id="sIIxWKEI" source="efo3liSe" target="C4BpMBJL">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.9579579579579579</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="BD0JUj3s" source="efo3liSe" target="M2huexCe">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.03903903903903904</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="khFISpgK" source="efo3liSe" target="TKwkF2Xz">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.003003003003003003</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
     <transition id="A1oiHCzV">
      <graphics>
       <position x="500" y="240.0"/>
@@ -928,7 +462,7 @@
      <name>
       <text>Wash and dry all kitchen countertop surfaces</text>
      </name>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
          <text>5.021592735247725</text>
@@ -939,47 +473,6 @@
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="ltIRgtaA" source="C4BpMBJL" target="A1oiHCzV">
-     <inscription>
-      <text>1</text>
-     </inscription>
-    </arc>
-    <arc id="gPPH02ab" source="A1oiHCzV" target="M2huexCe">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.9300911854103343</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="E4Y9EpyI" source="A1oiHCzV" target="TKwkF2Xz">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.0547112462006079</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="cn6gc666" source="A1oiHCzV" target="i3HmwjPF">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.015197568389057751</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
     <transition id="V7fuLFvQ">
      <graphics>
       <position x="550" y="240.0"/>
@@ -987,7 +480,7 @@
      <name>
       <text>Place a phone call to a recording and write down the recipe heard</text>
      </name>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
          <text>5.411719265771756</text>
@@ -998,59 +491,6 @@
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="Su0K7N0Z" source="M2huexCe" target="V7fuLFvQ">
-     <inscription>
-      <text>1</text>
-     </inscription>
-    </arc>
-    <arc id="nEDKnWPd" source="V7fuLFvQ" target="TKwkF2Xz">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.9688473520249221</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="Cia7vsVG" source="V7fuLFvQ" target="IIXM60jq">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.018691588785046728</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="cxRPMWx0" source="V7fuLFvQ" target="C4BpMBJL">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.009345794392523364</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="AITS83Hu" source="V7fuLFvQ" target="i3HmwjPF">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.003115264797507788</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
     <transition id="5oitci0c">
      <graphics>
       <position x="600" y="240.0"/>
@@ -1058,7 +498,7 @@
      <name>
       <text>Sort and fold a basketful of clothing containing men's, women's and children's articles</text>
      </name>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <time_function type="gamma">
        <param name="k">
          <text>6.7737704621388515</text>
@@ -1072,59 +512,6 @@
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="aYo6NQrV" source="TKwkF2Xz" target="5oitci0c">
-     <inscription>
-      <text>1</text>
-     </inscription>
-    </arc>
-    <arc id="xGuvjNtD" source="5oitci0c" target="IIXM60jq">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.9395770392749244</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="UbDSaNuJ" source="5oitci0c" target="S6huLT5I">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.0513595166163142</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="7ICi3iWB" source="5oitci0c" target="4Wuq9lXX">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.006042296072507553</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="FFlVXUsJ" source="5oitci0c" target="M2huexCe">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.0030211480362537764</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
     <transition id="t1zJmQ2U">
      <graphics>
       <position x="650" y="240.0"/>
@@ -1132,7 +519,7 @@
      <name>
       <text>Prepare a bowl of oatmeal on the stovetop from the directions given in task 12</text>
      </name>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
          <text>6.077372874951246</text>
@@ -1143,59 +530,6 @@
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="U4hMdMFW" source="IIXM60jq" target="t1zJmQ2U">
-     <inscription>
-      <text>1</text>
-     </inscription>
-    </arc>
-    <arc id="aJdbQHAT" source="t1zJmQ2U" target="S6huLT5I">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.9779179810725552</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="OaxOXrPa" source="t1zJmQ2U" target="4Wuq9lXX">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.015772870662460567</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="DBEvumwL" source="t1zJmQ2U" target="C4BpMBJL">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.0031545741324921135</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="mmPRG7JP" source="t1zJmQ2U" target="TKwkF2Xz">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.0031545741324921135</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
     <transition id="QOywjabU">
      <graphics>
       <position x="700" y="240.0"/>
@@ -1203,7 +537,7 @@
      <name>
       <text>Sort and file a small collection of billing statements</text>
      </name>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
          <text>4.641438209522428</text>
@@ -1214,71 +548,6 @@
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="9Zwk4E4k" source="S6huLT5I" target="QOywjabU">
-     <inscription>
-      <text>1</text>
-     </inscription>
-    </arc>
-    <arc id="unnKeGYD" source="QOywjabU" target="4Wuq9lXX">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.978125</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="VkOjHcXF" source="QOywjabU" target="Wt2hJdke">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.009375</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="a42Drjy9" source="QOywjabU" target="qeSEwyT9">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.00625</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="mRvu7RKL" source="QOywjabU" target="S6huLT5I">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.003125</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="bWaEMWRD" source="QOywjabU" target="Ym8vFv0i">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.003125</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
     <transition id="xWMPuMJK">
      <graphics>
       <position x="750" y="240.0"/>
@@ -1286,7 +555,7 @@
      <name>
       <text>Setup hands for a card game, answer the phone and describe the rules of the game</text>
      </name>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
          <text>5.248975058891759</text>
@@ -1297,95 +566,6 @@
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="E6BFvxm4" source="4Wuq9lXX" target="xWMPuMJK">
-     <inscription>
-      <text>1</text>
-     </inscription>
-    </arc>
-    <arc id="EqivcJfU" source="xWMPuMJK" target="qeSEwyT9">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.6488888888888888</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="zVE5XbX9" source="xWMPuMJK" target="Ym8vFv0i">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.1288888888888889</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="V2ESITei" source="xWMPuMJK" target="NXCOtEsW">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.09333333333333334</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="GcCbYlYm" source="xWMPuMJK" target="CTthmPRv">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.06666666666666667</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="rymwE0MG" source="xWMPuMJK" target="sHK7Yntz">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.03111111111111111</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="rrAhDcbB" source="xWMPuMJK" target="kOiNxlmf">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.022222222222222223</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="8GzsOE0J" source="xWMPuMJK" target="S6huLT5I">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.008888888888888889</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
     <transition id="61Uk6XVb">
      <graphics>
       <position x="800" y="240.0"/>
@@ -1393,7 +573,7 @@
      <name>
       <text>Examine a bus schedule; plan a trip including length of time and when to leave</text>
      </name>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <time_function type="gamma">
        <param name="k">
          <text>1.1597216059132036</text>
@@ -1407,107 +587,6 @@
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="POP1BBEH" source="qeSEwyT9" target="61Uk6XVb">
-     <inscription>
-      <text>1</text>
-     </inscription>
-    </arc>
-    <arc id="JOmKpXkI" source="61Uk6XVb" target="kOiNxlmf">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.5990990990990991</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="HGYHN81l" source="61Uk6XVb" target="Ym8vFv0i">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.16666666666666666</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="6wQtuVJZ" source="61Uk6XVb" target="CTthmPRv">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.09009009009009009</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="F35f5LGN" source="61Uk6XVb" target="sHK7Yntz">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.05405405405405406</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="PwjCy7qM" source="61Uk6XVb" target="NXCOtEsW">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.04504504504504504</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="jlapw7qG" source="61Uk6XVb" target="3QLsp8qL">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.02702702702702703</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="fAlfI29u" source="61Uk6XVb" target="nIro71iz">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.013513513513513514</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="FEHiCLQd" source="61Uk6XVb" target="qeSEwyT9">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.0045045045045045045</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
     <transition id="oforQsDG">
      <graphics>
       <position x="850" y="240.0"/>
@@ -1515,7 +594,7 @@
      <name>
       <text>Count out appropriate change for bus fare</text>
      </name>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
          <text>5.052007731506113</text>
@@ -1526,95 +605,6 @@
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="unld6aqw" source="kOiNxlmf" target="oforQsDG">
-     <inscription>
-      <text>1</text>
-     </inscription>
-    </arc>
-    <arc id="a6arkpfW" source="oforQsDG" target="3QLsp8qL">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.21243523316062177</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="wUdsDsOa" source="oforQsDG" target="Ym8vFv0i">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.19170984455958548</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="St5UDTB3" source="oforQsDG" target="sHK7Yntz">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.17616580310880828</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="3LZaZAUl" source="oforQsDG" target="NXCOtEsW">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.17098445595854922</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="8hFjuZyG" source="oforQsDG" target="CTthmPRv">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.10880829015544041</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="iqeQLWyB" source="oforQsDG" target="nIro71iz">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.10362694300518134</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="K3prCaLn" source="oforQsDG" target="qeSEwyT9">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.03626943005181347</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
     <transition id="7f2RVBeI">
      <graphics>
       <position x="900" y="240.0"/>
@@ -1622,7 +612,7 @@
      <name>
       <text>Find a recipe book, gather ingredients cited as necessary for a picnic meal</text>
      </name>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
          <text>5.098883284697127</text>
@@ -1633,95 +623,6 @@
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="wQG7ECMA" source="CTthmPRv" target="7f2RVBeI">
-     <inscription>
-      <text>1</text>
-     </inscription>
-    </arc>
-    <arc id="sWAuqB5o" source="7f2RVBeI" target="sHK7Yntz">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.30092592592592593</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="S67L85c9" source="7f2RVBeI" target="NXCOtEsW">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.28703703703703703</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="hsHSkEao" source="7f2RVBeI" target="nIro71iz">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.2175925925925926</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="XeHntLH5" source="7f2RVBeI" target="qeSEwyT9">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.06481481481481481</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="vMKzvh1E" source="7f2RVBeI" target="Ym8vFv0i">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.06481481481481481</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="3ITdDgmr" source="7f2RVBeI" target="3QLsp8qL">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.041666666666666664</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="4zh9zexm" source="7f2RVBeI" target="kOiNxlmf">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.023148148148148147</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
     <transition id="NIB1Y7PR">
      <graphics>
       <position x="950" y="240.0"/>
@@ -1729,7 +630,7 @@
      <name>
       <text>Obtain a picnic basket from the hall closet and fill with all items for the trip</text>
      </name>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
          <text>5.626344373376463</text>
@@ -1740,95 +641,6 @@
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="c4b0eeei" source="NXCOtEsW" target="NIB1Y7PR">
-     <inscription>
-      <text>1</text>
-     </inscription>
-    </arc>
-    <arc id="6F1A7pmN" source="NIB1Y7PR" target="Ym8vFv0i">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.2922374429223744</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="0iqHO6mh" source="NIB1Y7PR" target="sHK7Yntz">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.2100456621004566</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="1drVdbU1" source="NIB1Y7PR" target="CTthmPRv">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.182648401826484</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="ruBSBjyi" source="NIB1Y7PR" target="3QLsp8qL">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.1232876712328767</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="5pfPPe3n" source="NIB1Y7PR" target="nIro71iz">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.0958904109589041</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="GsPScuwo" source="NIB1Y7PR" target="qeSEwyT9">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.0502283105022831</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="NEaTmVYG" source="NIB1Y7PR" target="kOiNxlmf">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.045662100456621</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
     <transition id="EJnRx19j">
      <graphics>
       <position x="1000" y="240.0"/>
@@ -1836,7 +648,7 @@
      <name>
       <text>Microwave a comfort heat-pack for the bus ride</text>
      </name>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
          <text>5.606731211208515</text>
@@ -1847,95 +659,6 @@
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="HkRfZvTF" source="sHK7Yntz" target="EJnRx19j">
-     <inscription>
-      <text>1</text>
-     </inscription>
-    </arc>
-    <arc id="gvw9KXWX" source="EJnRx19j" target="CTthmPRv">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.24623115577889448</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="sWTpikPE" source="EJnRx19j" target="nIro71iz">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.24120603015075376</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="4QEDtRJG" source="EJnRx19j" target="3QLsp8qL">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.11557788944723618</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="MCbHfE18" source="EJnRx19j" target="kOiNxlmf">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.11055276381909548</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="IZEiDiOZ" source="EJnRx19j" target="Ym8vFv0i">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.11055276381909548</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="mrQShJar" source="EJnRx19j" target="qeSEwyT9">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.09547738693467336</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="vz80wYcW" source="EJnRx19j" target="NXCOtEsW">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.08040201005025126</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
     <transition id="WKpeHdyE">
      <graphics>
       <position x="1050" y="240.0"/>
@@ -1943,7 +666,7 @@
      <name>
       <text>Select a magazine to read during the trip</text>
      </name>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <time_function type="gamma">
        <param name="k">
          <text>0.3616463534645543</text>
@@ -1957,95 +680,6 @@
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="xNJnNGqx" source="Ym8vFv0i" target="WKpeHdyE">
-     <inscription>
-      <text>1</text>
-     </inscription>
-    </arc>
-    <arc id="9v7bHZa4" source="WKpeHdyE" target="NXCOtEsW">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.2558139534883721</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="cSwIXOhD" source="WKpeHdyE" target="CTthmPRv">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.2186046511627907</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="YTtiHpov" source="WKpeHdyE" target="3QLsp8qL">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.14418604651162792</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="eXkdB2jp" source="WKpeHdyE" target="nIro71iz">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.13488372093023257</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="WEnYVoIa" source="WKpeHdyE" target="sHK7Yntz">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.10697674418604651</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="2TWCRmQ9" source="WKpeHdyE" target="kOiNxlmf">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.07441860465116279</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="jLWNMaUq" source="WKpeHdyE" target="qeSEwyT9">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.06511627906976744</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
     <transition id="6zLMcPTP">
      <graphics>
       <position x="1100" y="240.0"/>
@@ -2053,7 +687,7 @@
      <name>
       <text>Take a dose of an anti-motion sickness medication</text>
      </name>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
          <text>4.250857739482503</text>
@@ -2064,95 +698,6 @@
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="UQRtfuDZ" source="nIro71iz" target="6zLMcPTP">
-     <inscription>
-      <text>1</text>
-     </inscription>
-    </arc>
-    <arc id="azj8mcPO" source="6zLMcPTP" target="3QLsp8qL">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.503030303030303</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="H25ulP7P" source="6zLMcPTP" target="CTthmPRv">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.15151515151515152</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="WBzAMdg2" source="6zLMcPTP" target="NXCOtEsW">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.12727272727272726</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="aW7ygDOy" source="6zLMcPTP" target="Ym8vFv0i">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.08484848484848485</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="3ilh2hKC" source="6zLMcPTP" target="sHK7Yntz">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.07272727272727272</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="TVxIcxVS" source="6zLMcPTP" target="kOiNxlmf">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.04242424242424243</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="eHAJiBiA" source="6zLMcPTP" target="qeSEwyT9">
-     <inscription>
-       <text>1</text>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <text>0.01818181818181818</text>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
     <transition id="CdkPA6hJ">
      <graphics>
       <position x="1150" y="240.0"/>
@@ -2160,7 +705,7 @@
      <name>
       <text>Take the filled picnic basket toward the apartment exit, as though leaving as planned</text>
      </name>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <time_function type="gamma">
        <param name="k">
          <text>0.057700678492958506</text>
@@ -2174,6 +719,1465 @@
       </time_function>
      </toolspecific>
     </transition>
+    <arc id="3DgfFkfJ" source="BisNxgAo" target="yWq67CiD">
+     <inscription>
+      <text>1</text>
+     </inscription>
+    </arc>
+    <arc id="uHC6lZKj" source="yWq67CiD" target="Yop6QJbt">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.9794117647058823</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="GQAcR7E8" source="yWq67CiD" target="zUXC6SmX">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.014705882352941176</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="gbp5k7Hy" source="yWq67CiD" target="qVG8os6i">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.0058823529411764705</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="iB5wP2pH" source="Yop6QJbt" target="korxKw0u">
+     <inscription>
+      <text>1</text>
+     </inscription>
+    </arc>
+    <arc id="kL3emg2G" source="korxKw0u" target="zUXC6SmX">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.9821958456973294</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="f466Hos1" source="korxKw0u" target="Fxa4YAtY">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.017804154302670624</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="9a614mQB" source="zUXC6SmX" target="2lksDdrc">
+     <inscription>
+      <text>1</text>
+     </inscription>
+    </arc>
+    <arc id="xw4Hy7s5" source="2lksDdrc" target="Fxa4YAtY">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.9647058823529412</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="YlVGXfzA" source="2lksDdrc" target="qVG8os6i">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.03235294117647059</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="yOIOOvOm" source="2lksDdrc" target="8XC73r9t">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.0029411764705882353</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="UuUeDCZE" source="Fxa4YAtY" target="lW2p09Wv">
+     <inscription>
+      <text>1</text>
+     </inscription>
+    </arc>
+    <arc id="7DGsb8TC" source="lW2p09Wv" target="qVG8os6i">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.987987987987988</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="f7QRez3V" source="lW2p09Wv" target="S6huLT5I">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.003003003003003003</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="5lXCku87" source="lW2p09Wv" target="zUXC6SmX">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.003003003003003003</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="LbLaU4cF" source="lW2p09Wv" target="zuTBtLzz">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.003003003003003003</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="IfVCJsmN" source="lW2p09Wv" target="Wt2hJdke">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.003003003003003003</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="vJobDtjZ" source="qVG8os6i" target="GSROs1vy">
+     <inscription>
+      <text>1</text>
+     </inscription>
+    </arc>
+    <arc id="12QpQT97" source="GSROs1vy" target="Wt2hJdke">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.892128279883382</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="36nNqIr0" source="GSROs1vy" target="zuTBtLzz">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.09329446064139942</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="8L4Q2eTm" source="GSROs1vy" target="8XC73r9t">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.011661807580174927</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="tCOOBsyH" source="GSROs1vy" target="i3HmwjPF">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.0029154518950437317</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="56hCevGY" source="Wt2hJdke" target="3A5oXorG">
+     <inscription>
+      <text>1</text>
+     </inscription>
+    </arc>
+    <arc id="tMwDfDb2" source="3A5oXorG" target="zuTBtLzz">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.9647435897435898</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="naMp3Een" source="3A5oXorG" target="8XC73r9t">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.022435897435897436</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="GxILGhz8" source="3A5oXorG" target="qeSEwyT9">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.00641025641025641</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="iRU3lCKH" source="3A5oXorG" target="M2huexCe">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.003205128205128205</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="IeYnJWen" source="3A5oXorG" target="qVG8os6i">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.003205128205128205</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="XUiJ3yAx" source="zuTBtLzz" target="PxGegREh">
+     <inscription>
+      <text>1</text>
+     </inscription>
+    </arc>
+    <arc id="SfqbsDR5" source="PxGegREh" target="8XC73r9t">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.9910179640718563</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="5mqSxwo2" source="PxGegREh" target="Wt2hJdke">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.005988023952095809</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="OVjhDPkd" source="PxGegREh" target="zUXC6SmX">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.0029940119760479044</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="DtvZeSeL" source="8XC73r9t" target="wM7mNKC3">
+     <inscription>
+      <text>1</text>
+     </inscription>
+    </arc>
+    <arc id="27d8Ym7W" source="wM7mNKC3" target="UWBXPj5Q">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.9702380952380952</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="PgSYJGVR" source="wM7mNKC3" target="i3HmwjPF">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.023809523809523808</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="dV77xChQ" source="wM7mNKC3" target="C4BpMBJL">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.002976190476190476</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="ekTc6Paf" source="wM7mNKC3" target="qeSEwyT9">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.002976190476190476</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="G6DuDdy6" source="UWBXPj5Q" target="ExQhgsbf">
+     <inscription>
+      <text>1</text>
+     </inscription>
+    </arc>
+    <arc id="080rxP4o" source="ExQhgsbf" target="i3HmwjPF">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.9755351681957186</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="p9r0CYt8" source="ExQhgsbf" target="C4BpMBJL">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.01834862385321101</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="tR4GUWzy" source="ExQhgsbf" target="M2huexCe">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.0061162079510703364</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="o4g4X8ix" source="i3HmwjPF" target="efo3liSe">
+     <inscription>
+      <text>1</text>
+     </inscription>
+    </arc>
+    <arc id="sIIxWKEI" source="efo3liSe" target="C4BpMBJL">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.9579579579579579</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="BD0JUj3s" source="efo3liSe" target="M2huexCe">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.03903903903903904</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="khFISpgK" source="efo3liSe" target="TKwkF2Xz">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.003003003003003003</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="ltIRgtaA" source="C4BpMBJL" target="A1oiHCzV">
+     <inscription>
+      <text>1</text>
+     </inscription>
+    </arc>
+    <arc id="gPPH02ab" source="A1oiHCzV" target="M2huexCe">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.9300911854103343</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="E4Y9EpyI" source="A1oiHCzV" target="TKwkF2Xz">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.0547112462006079</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="cn6gc666" source="A1oiHCzV" target="i3HmwjPF">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.015197568389057751</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="Su0K7N0Z" source="M2huexCe" target="V7fuLFvQ">
+     <inscription>
+      <text>1</text>
+     </inscription>
+    </arc>
+    <arc id="nEDKnWPd" source="V7fuLFvQ" target="TKwkF2Xz">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.9688473520249221</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="Cia7vsVG" source="V7fuLFvQ" target="IIXM60jq">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.018691588785046728</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="cxRPMWx0" source="V7fuLFvQ" target="C4BpMBJL">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.009345794392523364</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="AITS83Hu" source="V7fuLFvQ" target="i3HmwjPF">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.003115264797507788</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="aYo6NQrV" source="TKwkF2Xz" target="5oitci0c">
+     <inscription>
+      <text>1</text>
+     </inscription>
+    </arc>
+    <arc id="xGuvjNtD" source="5oitci0c" target="IIXM60jq">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.9395770392749244</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="UbDSaNuJ" source="5oitci0c" target="S6huLT5I">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.0513595166163142</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="7ICi3iWB" source="5oitci0c" target="4Wuq9lXX">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.006042296072507553</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="FFlVXUsJ" source="5oitci0c" target="M2huexCe">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.0030211480362537764</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="U4hMdMFW" source="IIXM60jq" target="t1zJmQ2U">
+     <inscription>
+      <text>1</text>
+     </inscription>
+    </arc>
+    <arc id="aJdbQHAT" source="t1zJmQ2U" target="S6huLT5I">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.9779179810725552</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="OaxOXrPa" source="t1zJmQ2U" target="4Wuq9lXX">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.015772870662460567</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="DBEvumwL" source="t1zJmQ2U" target="C4BpMBJL">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.0031545741324921135</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="mmPRG7JP" source="t1zJmQ2U" target="TKwkF2Xz">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.0031545741324921135</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="9Zwk4E4k" source="S6huLT5I" target="QOywjabU">
+     <inscription>
+      <text>1</text>
+     </inscription>
+    </arc>
+    <arc id="unnKeGYD" source="QOywjabU" target="4Wuq9lXX">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.978125</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="VkOjHcXF" source="QOywjabU" target="Wt2hJdke">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.009375</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="a42Drjy9" source="QOywjabU" target="qeSEwyT9">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.00625</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="mRvu7RKL" source="QOywjabU" target="S6huLT5I">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.003125</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="bWaEMWRD" source="QOywjabU" target="Ym8vFv0i">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.003125</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="E6BFvxm4" source="4Wuq9lXX" target="xWMPuMJK">
+     <inscription>
+      <text>1</text>
+     </inscription>
+    </arc>
+    <arc id="EqivcJfU" source="xWMPuMJK" target="qeSEwyT9">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.6488888888888888</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="zVE5XbX9" source="xWMPuMJK" target="Ym8vFv0i">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.1288888888888889</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="V2ESITei" source="xWMPuMJK" target="NXCOtEsW">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.09333333333333334</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="GcCbYlYm" source="xWMPuMJK" target="CTthmPRv">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.06666666666666667</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="rymwE0MG" source="xWMPuMJK" target="sHK7Yntz">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.03111111111111111</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="rrAhDcbB" source="xWMPuMJK" target="kOiNxlmf">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.022222222222222223</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="8GzsOE0J" source="xWMPuMJK" target="S6huLT5I">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.008888888888888889</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="POP1BBEH" source="qeSEwyT9" target="61Uk6XVb">
+     <inscription>
+      <text>1</text>
+     </inscription>
+    </arc>
+    <arc id="JOmKpXkI" source="61Uk6XVb" target="kOiNxlmf">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.5990990990990991</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="HGYHN81l" source="61Uk6XVb" target="Ym8vFv0i">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.16666666666666666</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="6wQtuVJZ" source="61Uk6XVb" target="CTthmPRv">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.09009009009009009</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="F35f5LGN" source="61Uk6XVb" target="sHK7Yntz">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.05405405405405406</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="PwjCy7qM" source="61Uk6XVb" target="NXCOtEsW">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.04504504504504504</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="jlapw7qG" source="61Uk6XVb" target="3QLsp8qL">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.02702702702702703</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="fAlfI29u" source="61Uk6XVb" target="nIro71iz">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.013513513513513514</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="FEHiCLQd" source="61Uk6XVb" target="qeSEwyT9">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.0045045045045045045</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="unld6aqw" source="kOiNxlmf" target="oforQsDG">
+     <inscription>
+      <text>1</text>
+     </inscription>
+    </arc>
+    <arc id="a6arkpfW" source="oforQsDG" target="3QLsp8qL">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.21243523316062177</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="wUdsDsOa" source="oforQsDG" target="Ym8vFv0i">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.19170984455958548</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="St5UDTB3" source="oforQsDG" target="sHK7Yntz">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.17616580310880828</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="3LZaZAUl" source="oforQsDG" target="NXCOtEsW">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.17098445595854922</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="8hFjuZyG" source="oforQsDG" target="CTthmPRv">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.10880829015544041</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="iqeQLWyB" source="oforQsDG" target="nIro71iz">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.10362694300518134</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="K3prCaLn" source="oforQsDG" target="qeSEwyT9">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.03626943005181347</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="wQG7ECMA" source="CTthmPRv" target="7f2RVBeI">
+     <inscription>
+      <text>1</text>
+     </inscription>
+    </arc>
+    <arc id="sWAuqB5o" source="7f2RVBeI" target="sHK7Yntz">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.30092592592592593</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="S67L85c9" source="7f2RVBeI" target="NXCOtEsW">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.28703703703703703</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="hsHSkEao" source="7f2RVBeI" target="nIro71iz">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.2175925925925926</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="XeHntLH5" source="7f2RVBeI" target="qeSEwyT9">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.06481481481481481</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="vMKzvh1E" source="7f2RVBeI" target="Ym8vFv0i">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.06481481481481481</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="3ITdDgmr" source="7f2RVBeI" target="3QLsp8qL">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.041666666666666664</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="4zh9zexm" source="7f2RVBeI" target="kOiNxlmf">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.023148148148148147</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="c4b0eeei" source="NXCOtEsW" target="NIB1Y7PR">
+     <inscription>
+      <text>1</text>
+     </inscription>
+    </arc>
+    <arc id="6F1A7pmN" source="NIB1Y7PR" target="Ym8vFv0i">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.2922374429223744</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="0iqHO6mh" source="NIB1Y7PR" target="sHK7Yntz">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.2100456621004566</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="1drVdbU1" source="NIB1Y7PR" target="CTthmPRv">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.182648401826484</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="ruBSBjyi" source="NIB1Y7PR" target="3QLsp8qL">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.1232876712328767</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="5pfPPe3n" source="NIB1Y7PR" target="nIro71iz">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.0958904109589041</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="GsPScuwo" source="NIB1Y7PR" target="qeSEwyT9">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.0502283105022831</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="NEaTmVYG" source="NIB1Y7PR" target="kOiNxlmf">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.045662100456621</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="HkRfZvTF" source="sHK7Yntz" target="EJnRx19j">
+     <inscription>
+      <text>1</text>
+     </inscription>
+    </arc>
+    <arc id="gvw9KXWX" source="EJnRx19j" target="CTthmPRv">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.24623115577889448</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="sWTpikPE" source="EJnRx19j" target="nIro71iz">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.24120603015075376</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="4QEDtRJG" source="EJnRx19j" target="3QLsp8qL">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.11557788944723618</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="MCbHfE18" source="EJnRx19j" target="kOiNxlmf">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.11055276381909548</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="IZEiDiOZ" source="EJnRx19j" target="Ym8vFv0i">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.11055276381909548</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="mrQShJar" source="EJnRx19j" target="qeSEwyT9">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.09547738693467336</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="vz80wYcW" source="EJnRx19j" target="NXCOtEsW">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.08040201005025126</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="xNJnNGqx" source="Ym8vFv0i" target="WKpeHdyE">
+     <inscription>
+      <text>1</text>
+     </inscription>
+    </arc>
+    <arc id="9v7bHZa4" source="WKpeHdyE" target="NXCOtEsW">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.2558139534883721</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="cSwIXOhD" source="WKpeHdyE" target="CTthmPRv">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.2186046511627907</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="YTtiHpov" source="WKpeHdyE" target="3QLsp8qL">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.14418604651162792</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="eXkdB2jp" source="WKpeHdyE" target="nIro71iz">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.13488372093023257</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="WEnYVoIa" source="WKpeHdyE" target="sHK7Yntz">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.10697674418604651</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="2TWCRmQ9" source="WKpeHdyE" target="kOiNxlmf">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.07441860465116279</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="jLWNMaUq" source="WKpeHdyE" target="qeSEwyT9">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.06511627906976744</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="UQRtfuDZ" source="nIro71iz" target="6zLMcPTP">
+     <inscription>
+      <text>1</text>
+     </inscription>
+    </arc>
+    <arc id="azj8mcPO" source="6zLMcPTP" target="3QLsp8qL">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.503030303030303</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="H25ulP7P" source="6zLMcPTP" target="CTthmPRv">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.15151515151515152</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="WBzAMdg2" source="6zLMcPTP" target="NXCOtEsW">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.12727272727272726</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="aW7ygDOy" source="6zLMcPTP" target="Ym8vFv0i">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.08484848484848485</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="3ilh2hKC" source="6zLMcPTP" target="sHK7Yntz">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.07272727272727272</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="TVxIcxVS" source="6zLMcPTP" target="kOiNxlmf">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.04242424242424243</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <arc id="eHAJiBiA" source="6zLMcPTP" target="qeSEwyT9">
+     <inscription>
+      <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.01818181818181818</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
     <arc id="ZTNjHpeV" source="3QLsp8qL" target="CdkPA6hJ">
      <inscription>
       <text>1</text>
@@ -2181,9 +2185,9 @@
     </arc>
     <arc id="8r6lV8Y2" source="CdkPA6hJ" target="sHK7Yntz">
      <inscription>
-       <text>1</text>
+      <text>1</text>
      </inscription>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <distribution id="0">
         <probability>
           <text>0.2777777777777778</text>
@@ -2193,9 +2197,9 @@
     </arc>
     <arc id="PWArqZPe" source="CdkPA6hJ" target="nIro71iz">
      <inscription>
-       <text>1</text>
+      <text>1</text>
      </inscription>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <distribution id="0">
         <probability>
           <text>0.2777777777777778</text>
@@ -2205,9 +2209,9 @@
     </arc>
     <arc id="4oS3aM2z" source="CdkPA6hJ" target="qeSEwyT9">
      <inscription>
-       <text>1</text>
+      <text>1</text>
      </inscription>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <distribution id="0">
         <probability>
           <text>0.16666666666666666</text>
@@ -2217,9 +2221,9 @@
     </arc>
     <arc id="5FyWMwe4" source="CdkPA6hJ" target="Ym8vFv0i">
      <inscription>
-       <text>1</text>
+      <text>1</text>
      </inscription>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <distribution id="0">
         <probability>
           <text>0.1111111111111111</text>
@@ -2229,9 +2233,9 @@
     </arc>
     <arc id="kuzjultv" source="CdkPA6hJ" target="NXCOtEsW">
      <inscription>
-       <text>1</text>
+      <text>1</text>
      </inscription>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <distribution id="0">
         <probability>
           <text>0.1111111111111111</text>
@@ -2241,9 +2245,9 @@
     </arc>
     <arc id="BYnavl9X" source="CdkPA6hJ" target="CTthmPRv">
      <inscription>
-       <text>1</text>
+      <text>1</text>
      </inscription>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <distribution id="0">
         <probability>
           <text>0.05555555555555555</text>

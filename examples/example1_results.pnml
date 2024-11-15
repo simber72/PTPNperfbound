@@ -1,28 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
 <pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
  <net id="PT1" type="http://www.pnml.org/version-2009/grammar/ptnet">
   <page id="page0">
     <place id="P0">
-        <graphics>
-          <position x="100" y="20"/>
-        </graphics>
-        <name>
-          <text>P0</text>
-        </name>
-        <initialMarking>
-          <text>1</text>
-        </initialMarking>
-      </place>
+     <graphics>
+      <position x="0" y="150.0"/>
+     </graphics>
+     <name>
+      <text>P0</text>
+     </name>
+     <initialMarking>
+      <text>1</text>
+     </initialMarking>
+    </place>
     <place id="P3">
      <graphics>
-      <position x="30" y="180.0"/>
+      <position x="50" y="150.0"/>
      </graphics>
      <name>
       <text>P3</text>
      </name>
+     <initialMarking>
+      <text>0</text>
+     </initialMarking>
     </place>
     <place id="P4">
      <graphics>
-      <position x="170" y="180.0"/>
+      <position x="100" y="150.0"/>
      </graphics>
      <name>
       <text>P4</text>
@@ -33,7 +37,7 @@
     </place>
     <place id="P5">
      <graphics>
-      <position x="70" y="180.0"/>
+      <position x="150" y="150.0"/>
      </graphics>
      <name>
       <text>P5</text>
@@ -44,7 +48,7 @@
     </place>
     <place id="P6">
      <graphics>
-      <position x="130" y="180.0"/>
+      <position x="200" y="150.0"/>
      </graphics>
      <name>
       <text>P6</text>
@@ -55,7 +59,7 @@
     </place>
     <place id="P7">
      <graphics>
-      <position x="130" y="180.0"/>
+      <position x="250" y="150.0"/>
      </graphics>
      <name>
       <text>P7</text>
@@ -66,7 +70,7 @@
     </place>
     <place id="P8">
      <graphics>
-      <position x="130" y="180.0"/>
+      <position x="300" y="150.0"/>
      </graphics>
      <name>
       <text>P8</text>
@@ -77,18 +81,111 @@
     </place>
     <transition id="T0">
      <graphics>
-      <position x="105" y="60.0"/>
+      <position x="0" y="240.0"/>
      </graphics>
      <name>
       <text>T0</text>
      </name>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <time_function type="interval">
        <param name="min">
          <text>0.0</text>
        </param>
        <param name="max">
          <text>4.0</text>
+       </param>
+      </time_function>
+      <bound metric="Throughput" statQ="max">
+       <text>0.17258876240050258</text>
+      </bound>
+      <bound metric="Cycle time" statQ="min">
+       <text>5.7941199999999995</text>
+      </bound>
+     </toolspecific>
+    </transition>
+    <transition id="T5">
+     <graphics>
+      <position x="50" y="240.0"/>
+     </graphics>
+     <name>
+      <text>T5</text>
+     </name>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <time_function type="interval">
+       <param name="min">
+         <text>0.0</text>
+       </param>
+       <param name="max">
+         <text>5.0</text>
+       </param>
+      </time_function>
+     </toolspecific>
+    </transition>
+    <transition id="T6">
+     <graphics>
+      <position x="100" y="240.0"/>
+     </graphics>
+     <name>
+      <text>T6</text>
+     </name>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <time_function type="interval">
+       <param name="min">
+         <text>0.0</text>
+       </param>
+       <param name="max">
+         <text>6.0</text>
+       </param>
+      </time_function>
+     </toolspecific>
+    </transition>
+    <transition id="T8">
+     <graphics>
+      <position x="150" y="240.0"/>
+     </graphics>
+     <name>
+      <text>T8</text>
+     </name>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <time_function type="interval">
+       <param name="min">
+         <text>0.0</text>
+       </param>
+       <param name="max">
+         <text>8.0</text>
+       </param>
+      </time_function>
+     </toolspecific>
+    </transition>
+    <transition id="T7">
+     <graphics>
+      <position x="200" y="240.0"/>
+     </graphics>
+     <name>
+      <text>T7</text>
+     </name>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <time_function type="interval">
+       <param name="min">
+         <text>0.0</text>
+       </param>
+       <param name="max">
+         <text>7.0</text>
+       </param>
+      </time_function>
+     </toolspecific>
+    </transition>
+    <transition id="T9">
+     <graphics>
+      <position x="250" y="240.0"/>
+     </graphics>
+     <name>
+      <text>T9</text>
+     </name>
+     <toolspecific tool="PTPNperfbound" version="0.1">
+      <time_function type="constant">
+       <param name="k">
+         <text>0.0</text>
        </param>
       </time_function>
      </toolspecific>
@@ -100,9 +197,9 @@
     </arc>
     <arc id="Pj5ob9OE" source="T0" target="P3">
      <inscription>
-       <text>1</text>
+      <text>1</text>
      </inscription>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <distribution id="0">
         <probability>
           <text>0.6667</text>
@@ -112,9 +209,9 @@
     </arc>
     <arc id="5xSxwCY8" source="T0" target="P5">
      <inscription>
-       <text>1</text>
+      <text>1</text>
      </inscription>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <distribution id="0">
         <probability>
           <text>0.3333</text>
@@ -124,9 +221,9 @@
     </arc>
     <arc id="Pj5ob91A" source="T0" target="P4">
      <inscription>
-       <text>1</text>
+      <text>1</text>
      </inscription>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <distribution id="1">
         <probability>
           <text>0.41176</text>
@@ -136,9 +233,9 @@
     </arc>
     <arc id="5xSxwCJ7" source="T0" target="P6">
      <inscription>
-       <text>1</text>
+      <text>1</text>
      </inscription>
-     <toolspecific tool="PTPN" version="0.1">
+     <toolspecific tool="PTPNperfbound" version="0.1">
       <distribution id="1">
         <probability>
           <text>0.58824</text>
@@ -146,24 +243,6 @@
       </distribution>
      </toolspecific>
     </arc>
-    <transition id="T5">
-     <graphics>
-      <position x="35" y="230.0"/>
-     </graphics>
-     <name>
-      <text>T5</text>
-     </name>
-     <toolspecific tool="PTPN" version="0.1">
-      <time_function type="interval">
-       <param name="min">
-         <text>0.0</text>
-       </param>
-       <param name="max">
-         <text>5.0</text>
-       </param>
-      </time_function>
-     </toolspecific>
-    </transition>
     <arc id="ZBE0HUQW" source="P3" target="T5">
      <inscription>
       <text>1</text>
@@ -171,27 +250,9 @@
     </arc>
     <arc id="Ogoi4U3s" source="T5" target="P7">
      <inscription>
-       <text>1</text>
+      <text>1</text>
      </inscription>
     </arc>
-    <transition id="T6">
-     <graphics>
-      <position x="75" y="230.0"/>
-     </graphics>
-     <name>
-      <text>T6</text>
-     </name>
-     <toolspecific tool="PTPN" version="0.1">
-      <time_function type="interval">
-       <param name="min">
-         <text>0.0</text>
-       </param>
-       <param name="max">
-         <text>6.0</text>
-       </param>
-      </time_function>
-     </toolspecific>
-    </transition>
     <arc id="aq8OG6Wc" source="P5" target="T6">
      <inscription>
       <text>1</text>
@@ -199,29 +260,9 @@
     </arc>
     <arc id="hAwgu8Vy" source="T6" target="P7">
      <inscription>
-       <text>1</text>
+      <text>1</text>
      </inscription>
-          <toolspecific tool="PTPN" version="0.1">
-     </toolspecific>
     </arc>
-    <transition id="T8">
-     <graphics>
-      <position x="135" y="230.0"/>
-     </graphics>
-     <name>
-      <text>T8</text>
-     </name>
-     <toolspecific tool="PTPN" version="0.1">
-      <time_function type="interval">
-       <param name="min">
-         <text>0.0</text>
-       </param>
-       <param name="max">
-         <text>8.0</text>
-       </param>
-      </time_function>
-     </toolspecific>
-    </transition>
     <arc id="sS56AKvr" source="P6" target="T8">
      <inscription>
       <text>1</text>
@@ -229,27 +270,9 @@
     </arc>
     <arc id="sQS6V4P3" source="T8" target="P8">
      <inscription>
-       <text>1</text>
+      <text>1</text>
      </inscription>
     </arc>
-    <transition id="T7">
-     <graphics>
-      <position x="175" y="230.0"/>
-     </graphics>
-     <name>
-      <text>T7</text>
-     </name>
-     <toolspecific tool="PTPN" version="0.1">
-      <time_function type="interval">
-       <param name="min">
-         <text>0.0</text>
-       </param>
-       <param name="max">
-         <text>7.0</text>
-       </param>
-      </time_function>
-     </toolspecific>
-    </transition>
     <arc id="7rsUGdea" source="P4" target="T7">
      <inscription>
       <text>1</text>
@@ -257,24 +280,9 @@
     </arc>
     <arc id="BWlQpbdt" source="T7" target="P8">
      <inscription>
-       <text>1</text>
+      <text>1</text>
      </inscription>
     </arc>
-    <transition id="T9">
-     <graphics>
-      <position x="108" y="310.0"/>
-     </graphics>
-     <name>
-      <text>T9</text>
-     </name>
-     <toolspecific tool="PTPN" version="0.1">
-      <time_function type="constant">
-       <param name="k">
-         <text>0.0</text>
-       </param>
-      </time_function>
-     </toolspecific>
-    </transition>
     <arc id="6OTa9SfR" source="P7" target="T9">
      <inscription>
       <text>1</text>
@@ -282,14 +290,26 @@
     </arc>
     <arc id="j11ppkhK" source="P8" target="T9">
      <inscription>
-       <text>1</text>
+      <text>1</text>
      </inscription>
     </arc>
     <arc id="lNyUFcHK" source="T9" target="P0">
      <inscription>
-       <text>1</text>
+      <text>1</text>
      </inscription>
-     </arc>
+    </arc>
+  <toolspecific tool="PTPNperfbound" version="0.1">
+   <critical_subnet>
+    <pl id="P6"/>
+    <pl id="P8"/>
+    <pl id="P4"/>
+    <pl id="P0"/>
+    <tr id="T0"/>
+    <tr id="T8"/>
+    <tr id="T9"/>
+    <tr id="T7"/>
+   </critical_subnet>
+  </toolspecific>
   </page>
  </net>
 </pnml>

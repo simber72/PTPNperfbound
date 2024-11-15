@@ -1,2252 +1,2252 @@
 <pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
- <net id="iam1IUZe" type="http://www.pnml.org/version-2009/grammar/ptnet">
-  <page id="Y82OZF2I">
-    <place id="r9JsNUXh">
+ <net id="XZUFBWqL" type="http://www.pnml.org/version-2009/grammar/ptnet">
+  <page id="OgnPXttK">
+    <place id="Yop6QJbt">
      <graphics>
       <position x="0" y="150.0"/>
      </graphics>
      <name>
-      <value>P0</value>
+      <text>P0</text>
      </name>
      <initialMarking>
-      <value>0</value>
+      <text>0</text>
      </initialMarking>
     </place>
-    <place id="BjNJz8A5">
+    <place id="zUXC6SmX">
      <graphics>
       <position x="50" y="150.0"/>
      </graphics>
      <name>
-      <value>P1</value>
+      <text>P1</text>
      </name>
      <initialMarking>
-      <value>0</value>
+      <text>0</text>
      </initialMarking>
     </place>
-    <place id="LH69oYI8">
+    <place id="qVG8os6i">
      <graphics>
       <position x="100" y="150.0"/>
      </graphics>
      <name>
-      <value>P2</value>
+      <text>P2</text>
      </name>
      <initialMarking>
-      <value>0</value>
+      <text>0</text>
      </initialMarking>
     </place>
-    <place id="thCGCbVA">
+    <place id="Fxa4YAtY">
      <graphics>
       <position x="150" y="150.0"/>
      </graphics>
      <name>
-      <value>P3</value>
+      <text>P3</text>
      </name>
      <initialMarking>
-      <value>0</value>
+      <text>0</text>
      </initialMarking>
     </place>
-    <place id="xr4Y0xQT">
+    <place id="8XC73r9t">
      <graphics>
       <position x="200" y="150.0"/>
      </graphics>
      <name>
-      <value>P4</value>
+      <text>P4</text>
      </name>
      <initialMarking>
-      <value>0</value>
+      <text>0</text>
      </initialMarking>
     </place>
-    <place id="Fp1BkDx5">
+    <place id="Wt2hJdke">
      <graphics>
       <position x="250" y="150.0"/>
      </graphics>
      <name>
-      <value>P5</value>
+      <text>P5</text>
      </name>
      <initialMarking>
-      <value>0</value>
+      <text>0</text>
      </initialMarking>
     </place>
-    <place id="0cAD8dFh">
+    <place id="S6huLT5I">
      <graphics>
       <position x="300" y="150.0"/>
      </graphics>
      <name>
-      <value>P6</value>
+      <text>P6</text>
      </name>
      <initialMarking>
-      <value>0</value>
+      <text>0</text>
      </initialMarking>
     </place>
-    <place id="chKYpT8B">
+    <place id="zuTBtLzz">
      <graphics>
       <position x="350" y="150.0"/>
      </graphics>
      <name>
-      <value>P7</value>
+      <text>P7</text>
      </name>
      <initialMarking>
-      <value>0</value>
+      <text>0</text>
      </initialMarking>
     </place>
-    <place id="lcO4jtkM">
+    <place id="UWBXPj5Q">
      <graphics>
       <position x="400" y="150.0"/>
      </graphics>
      <name>
-      <value>P8</value>
+      <text>P8</text>
      </name>
      <initialMarking>
-      <value>0</value>
+      <text>0</text>
      </initialMarking>
     </place>
-    <place id="Cah3fyhX">
+    <place id="i3HmwjPF">
      <graphics>
       <position x="450" y="150.0"/>
      </graphics>
      <name>
-      <value>P9</value>
+      <text>P9</text>
      </name>
      <initialMarking>
-      <value>0</value>
+      <text>0</text>
      </initialMarking>
     </place>
-    <place id="pZGkhUfQ">
+    <place id="C4BpMBJL">
      <graphics>
       <position x="500" y="150.0"/>
      </graphics>
      <name>
-      <value>P10</value>
+      <text>P10</text>
      </name>
      <initialMarking>
-      <value>0</value>
+      <text>0</text>
      </initialMarking>
     </place>
-    <place id="SLzL6R2q">
+    <place id="qeSEwyT9">
      <graphics>
       <position x="550" y="150.0"/>
      </graphics>
      <name>
-      <value>P11</value>
+      <text>P11</text>
      </name>
      <initialMarking>
-      <value>0</value>
+      <text>0</text>
      </initialMarking>
     </place>
-    <place id="xDOGMP8j">
+    <place id="M2huexCe">
      <graphics>
       <position x="600" y="150.0"/>
      </graphics>
      <name>
-      <value>P12</value>
+      <text>P12</text>
      </name>
      <initialMarking>
-      <value>0</value>
+      <text>0</text>
      </initialMarking>
     </place>
-    <place id="83IbTzHG">
+    <place id="TKwkF2Xz">
      <graphics>
       <position x="650" y="150.0"/>
      </graphics>
      <name>
-      <value>P13</value>
+      <text>P13</text>
      </name>
      <initialMarking>
-      <value>0</value>
+      <text>0</text>
      </initialMarking>
     </place>
-    <place id="aCIPxUxH">
+    <place id="4Wuq9lXX">
      <graphics>
       <position x="700" y="150.0"/>
      </graphics>
      <name>
-      <value>P14</value>
+      <text>P14</text>
      </name>
      <initialMarking>
-      <value>0</value>
+      <text>0</text>
      </initialMarking>
     </place>
-    <place id="YH7BDXyA">
+    <place id="Ym8vFv0i">
      <graphics>
       <position x="750" y="150.0"/>
      </graphics>
      <name>
-      <value>P15</value>
+      <text>P15</text>
      </name>
      <initialMarking>
-      <value>0</value>
+      <text>0</text>
      </initialMarking>
     </place>
-    <place id="55JTOd0A">
+    <place id="IIXM60jq">
      <graphics>
       <position x="800" y="150.0"/>
      </graphics>
      <name>
-      <value>P16</value>
+      <text>P16</text>
      </name>
      <initialMarking>
-      <value>0</value>
+      <text>0</text>
      </initialMarking>
     </place>
-    <place id="jhn3OQqh">
+    <place id="NXCOtEsW">
      <graphics>
       <position x="850" y="150.0"/>
      </graphics>
      <name>
-      <value>P17</value>
+      <text>P17</text>
      </name>
      <initialMarking>
-      <value>0</value>
+      <text>0</text>
      </initialMarking>
     </place>
-    <place id="2Bc6IkzA">
+    <place id="CTthmPRv">
      <graphics>
       <position x="900" y="150.0"/>
      </graphics>
      <name>
-      <value>P18</value>
+      <text>P18</text>
      </name>
      <initialMarking>
-      <value>0</value>
+      <text>0</text>
      </initialMarking>
     </place>
-    <place id="cd8zqhC6">
+    <place id="sHK7Yntz">
      <graphics>
       <position x="950" y="150.0"/>
      </graphics>
      <name>
-      <value>P19</value>
+      <text>P19</text>
      </name>
      <initialMarking>
-      <value>0</value>
+      <text>0</text>
      </initialMarking>
     </place>
-    <place id="Kvx1herX">
+    <place id="kOiNxlmf">
      <graphics>
       <position x="1000" y="150.0"/>
      </graphics>
      <name>
-      <value>P20</value>
+      <text>P20</text>
      </name>
      <initialMarking>
-      <value>0</value>
+      <text>0</text>
      </initialMarking>
     </place>
-    <place id="q7oi0iEl">
+    <place id="3QLsp8qL">
      <graphics>
       <position x="1050" y="150.0"/>
      </graphics>
      <name>
-      <value>P21</value>
+      <text>P21</text>
      </name>
      <initialMarking>
-      <value>0</value>
+      <text>0</text>
      </initialMarking>
     </place>
-    <place id="D9hlXoo9">
+    <place id="nIro71iz">
      <graphics>
       <position x="1100" y="150.0"/>
      </graphics>
      <name>
-      <value>P22</value>
+      <text>P22</text>
      </name>
      <initialMarking>
-      <value>0</value>
+      <text>0</text>
      </initialMarking>
     </place>
-    <place id="xTW00TLp">
+    <place id="BisNxgAo">
      <graphics>
       <position x="1150" y="150.0"/>
      </graphics>
      <name>
-      <value>start</value>
+      <text>start</text>
      </name>
      <initialMarking>
-      <value>1</value>
+      <text>1</text>
      </initialMarking>
     </place>
-    <transition id="DaveuAzu">
+    <transition id="yWq67CiD">
      <graphics>
       <position x="0" y="240.0"/>
      </graphics>
      <name>
-      <value>Sweep the kitchen and dust the living room</value>
+      <text>Sweep the kitchen and dust the living room</text>
      </name>
      <toolspecific tool="PTPN" version="0.1">
       <time_function type="gamma">
        <param name="k">
-         <value>4.888786722457527</value>
+         <text>4.888786722457527</text>
        </param>
        <param name="theta">
-         <value>53.54931424355313</value>
+         <text>53.54931424355313</text>
        </param>
        <param name="gamma_k">
-         <value>20.134640272059574</value>
+         <text>20.134640272059574</text>
        </param>
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="tSl21qus" source="xTW00TLp" target="DaveuAzu">
+    <arc id="3DgfFkfJ" source="BisNxgAo" target="yWq67CiD">
      <inscription>
-      <value>1</value>
+      <text>1</text>
      </inscription>
     </arc>
-    <arc id="xob91iLC" source="DaveuAzu" target="r9JsNUXh">
+    <arc id="uHC6lZKj" source="yWq67CiD" target="Yop6QJbt">
      <inscription>
-       <value>1</value>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <value>0.9794117647058823</value>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="67jomZEo" source="DaveuAzu" target="BjNJz8A5">
-     <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.014705882352941176</value>
+          <text>0.9794117647058823</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="LArk4QNi" source="DaveuAzu" target="LH69oYI8">
+    <arc id="GQAcR7E8" source="yWq67CiD" target="zUXC6SmX">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.0058823529411764705</value>
+          <text>0.014705882352941176</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <transition id="HBIq01a0">
+    <arc id="gbp5k7Hy" source="yWq67CiD" target="qVG8os6i">
+     <inscription>
+       <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPN" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.0058823529411764705</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <transition id="korxKw0u">
      <graphics>
       <position x="50" y="240.0"/>
      </graphics>
      <name>
-      <value>Obtain a set of medicines and a weekly medicine dispenser, fill as per directions</value>
+      <text>Obtain a set of medicines and a weekly medicine dispenser, fill as per directions</text>
      </name>
      <toolspecific tool="PTPN" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
-         <value>5.278648125601409</value>
+         <text>5.278648125601409</text>
        </param>
        <param name="sigma">
-         <value>0.3370432328367271</value>
+         <text>0.3370432328367271</text>
        </param>
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="4Ib1wGtO" source="r9JsNUXh" target="HBIq01a0">
+    <arc id="iB5wP2pH" source="Yop6QJbt" target="korxKw0u">
      <inscription>
-      <value>1</value>
+      <text>1</text>
      </inscription>
     </arc>
-    <arc id="nUAgEWYB" source="HBIq01a0" target="BjNJz8A5">
+    <arc id="kL3emg2G" source="korxKw0u" target="zUXC6SmX">
      <inscription>
-       <value>1</value>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <value>0.9821958456973294</value>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="pWFWFeQR" source="HBIq01a0" target="thCGCbVA">
-     <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.017804154302670624</value>
+          <text>0.9821958456973294</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <transition id="tqP9VgLd">
+    <arc id="f466Hos1" source="korxKw0u" target="Fxa4YAtY">
+     <inscription>
+       <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPN" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.017804154302670624</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <transition id="2lksDdrc">
      <graphics>
       <position x="100" y="240.0"/>
      </graphics>
      <name>
-      <value>Write a birthday card, enclose a check and address an envelope</value>
+      <text>Write a birthday card, enclose a check and address an envelope</text>
      </name>
      <toolspecific tool="PTPN" version="0.1">
       <time_function type="gamma">
        <param name="k">
-         <value>6.67254998246216</value>
+         <text>6.67254998246216</text>
        </param>
        <param name="theta">
-         <value>40.366876337824046</value>
+         <text>40.366876337824046</text>
        </param>
        <param name="gamma_k">
-         <value>385.8677359313438</value>
+         <text>385.8677359313438</text>
        </param>
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="esncVYaw" source="BjNJz8A5" target="tqP9VgLd">
+    <arc id="9a614mQB" source="zUXC6SmX" target="2lksDdrc">
      <inscription>
-      <value>1</value>
+      <text>1</text>
      </inscription>
     </arc>
-    <arc id="4cb0S6Mf" source="tqP9VgLd" target="thCGCbVA">
+    <arc id="xw4Hy7s5" source="2lksDdrc" target="Fxa4YAtY">
      <inscription>
-       <value>1</value>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <value>0.9647058823529412</value>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="uhK8x9Gt" source="tqP9VgLd" target="LH69oYI8">
-     <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.03235294117647059</value>
+          <text>0.9647058823529412</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="3uzGLY0e" source="tqP9VgLd" target="xr4Y0xQT">
+    <arc id="YlVGXfzA" source="2lksDdrc" target="qVG8os6i">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.0029411764705882353</value>
+          <text>0.03235294117647059</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <transition id="GPN4FY6B">
+    <arc id="yOIOOvOm" source="2lksDdrc" target="8XC73r9t">
+     <inscription>
+       <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPN" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.0029411764705882353</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <transition id="lW2p09Wv">
      <graphics>
       <position x="150" y="240.0"/>
      </graphics>
      <name>
-      <value>Find the appropriate DVD and watch the corresponding news clip</value>
+      <text>Find the appropriate DVD and watch the corresponding news clip</text>
      </name>
      <toolspecific tool="PTPN" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
-         <value>6.249229027614529</value>
+         <text>6.249229027614529</text>
        </param>
        <param name="sigma">
-         <value>0.32003571176405526</value>
+         <text>0.32003571176405526</text>
        </param>
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="eFtVUznT" source="thCGCbVA" target="GPN4FY6B">
+    <arc id="UuUeDCZE" source="Fxa4YAtY" target="lW2p09Wv">
      <inscription>
-      <value>1</value>
+      <text>1</text>
      </inscription>
     </arc>
-    <arc id="tRWlka98" source="GPN4FY6B" target="LH69oYI8">
+    <arc id="7DGsb8TC" source="lW2p09Wv" target="qVG8os6i">
      <inscription>
-       <value>1</value>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <value>0.987987987987988</value>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="YLBSu5Ms" source="GPN4FY6B" target="0cAD8dFh">
-     <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.003003003003003003</value>
+          <text>0.987987987987988</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="EfXV4Zkp" source="GPN4FY6B" target="BjNJz8A5">
+    <arc id="f7QRez3V" source="lW2p09Wv" target="S6huLT5I">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.003003003003003003</value>
+          <text>0.003003003003003003</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="UqDBkuMd" source="GPN4FY6B" target="chKYpT8B">
+    <arc id="5lXCku87" source="lW2p09Wv" target="zUXC6SmX">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.003003003003003003</value>
+          <text>0.003003003003003003</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="vVMsGHUS" source="GPN4FY6B" target="Fp1BkDx5">
+    <arc id="LbLaU4cF" source="lW2p09Wv" target="zuTBtLzz">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.003003003003003003</value>
+          <text>0.003003003003003003</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <transition id="YSezh3pm">
+    <arc id="IfVCJsmN" source="lW2p09Wv" target="Wt2hJdke">
+     <inscription>
+       <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPN" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.003003003003003003</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <transition id="GSROs1vy">
      <graphics>
       <position x="200" y="240.0"/>
      </graphics>
      <name>
-      <value>Obtain a watering can and water all plants in the living space</value>
+      <text>Obtain a watering can and water all plants in the living space</text>
      </name>
      <toolspecific tool="PTPN" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
-         <value>4.195066746315348</value>
+         <text>4.195066746315348</text>
        </param>
        <param name="sigma">
-         <value>0.27597029294819275</value>
+         <text>0.27597029294819275</text>
        </param>
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="TrSdZ9MI" source="LH69oYI8" target="YSezh3pm">
+    <arc id="vJobDtjZ" source="qVG8os6i" target="GSROs1vy">
      <inscription>
-      <value>1</value>
+      <text>1</text>
      </inscription>
     </arc>
-    <arc id="Y3DxK8vH" source="YSezh3pm" target="Fp1BkDx5">
+    <arc id="12QpQT97" source="GSROs1vy" target="Wt2hJdke">
      <inscription>
-       <value>1</value>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <value>0.892128279883382</value>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="aCjw4tOu" source="YSezh3pm" target="chKYpT8B">
-     <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.09329446064139942</value>
+          <text>0.892128279883382</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="RTsJlcyp" source="YSezh3pm" target="xr4Y0xQT">
+    <arc id="36nNqIr0" source="GSROs1vy" target="zuTBtLzz">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.011661807580174927</value>
+          <text>0.09329446064139942</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="ytzT7FMZ" source="YSezh3pm" target="Cah3fyhX">
+    <arc id="8L4Q2eTm" source="GSROs1vy" target="8XC73r9t">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.0029154518950437317</value>
+          <text>0.011661807580174927</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <transition id="qLW8q5az">
+    <arc id="tCOOBsyH" source="GSROs1vy" target="i3HmwjPF">
+     <inscription>
+       <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPN" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.0029154518950437317</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <transition id="3A5oXorG">
      <graphics>
       <position x="250" y="240.0"/>
      </graphics>
      <name>
-      <value>Answer the phone and respond to questions pertaining to the video from task 4</value>
+      <text>Answer the phone and respond to questions pertaining to the video from task 4</text>
      </name>
      <toolspecific tool="PTPN" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
-         <value>4.989705820787425</value>
+         <text>4.989705820787425</text>
        </param>
        <param name="sigma">
-         <value>0.5663451320852485</value>
+         <text>0.5663451320852485</text>
        </param>
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="1QnPmgWl" source="Fp1BkDx5" target="qLW8q5az">
+    <arc id="56hCevGY" source="Wt2hJdke" target="3A5oXorG">
      <inscription>
-      <value>1</value>
+      <text>1</text>
      </inscription>
     </arc>
-    <arc id="uh9YPAgN" source="qLW8q5az" target="chKYpT8B">
+    <arc id="tMwDfDb2" source="3A5oXorG" target="zuTBtLzz">
      <inscription>
-       <value>1</value>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <value>0.9647435897435898</value>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="mHKD7xsw" source="qLW8q5az" target="xr4Y0xQT">
-     <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.022435897435897436</value>
+          <text>0.9647435897435898</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="Xn9sYoWO" source="qLW8q5az" target="SLzL6R2q">
+    <arc id="naMp3Een" source="3A5oXorG" target="8XC73r9t">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.00641025641025641</value>
+          <text>0.022435897435897436</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="Rw2Gtjbn" source="qLW8q5az" target="xDOGMP8j">
+    <arc id="GxILGhz8" source="3A5oXorG" target="qeSEwyT9">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.003205128205128205</value>
+          <text>0.00641025641025641</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="tWqh6cIs" source="qLW8q5az" target="LH69oYI8">
+    <arc id="iRU3lCKH" source="3A5oXorG" target="M2huexCe">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.003205128205128205</value>
+          <text>0.003205128205128205</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <transition id="UNyCDkMV">
+    <arc id="IeYnJWen" source="3A5oXorG" target="qVG8os6i">
+     <inscription>
+       <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPN" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.003205128205128205</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <transition id="PxGegREh">
      <graphics>
       <position x="300" y="240.0"/>
      </graphics>
      <name>
-      <value>Prepare a cup of soup using the microwave</value>
+      <text>Prepare a cup of soup using the microwave</text>
      </name>
      <toolspecific tool="PTPN" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
-         <value>5.948707350694023</value>
+         <text>5.948707350694023</text>
        </param>
        <param name="sigma">
-         <value>0.3940092383963318</value>
+         <text>0.3940092383963318</text>
        </param>
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="J4K83QKF" source="chKYpT8B" target="UNyCDkMV">
+    <arc id="XUiJ3yAx" source="zuTBtLzz" target="PxGegREh">
      <inscription>
-      <value>1</value>
+      <text>1</text>
      </inscription>
     </arc>
-    <arc id="xpGqXI0w" source="UNyCDkMV" target="xr4Y0xQT">
+    <arc id="SfqbsDR5" source="PxGegREh" target="8XC73r9t">
      <inscription>
-       <value>1</value>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <value>0.9910179640718563</value>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="TcNkXJde" source="UNyCDkMV" target="Fp1BkDx5">
-     <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.005988023952095809</value>
+          <text>0.9910179640718563</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="PWs07TaC" source="UNyCDkMV" target="BjNJz8A5">
+    <arc id="5mqSxwo2" source="PxGegREh" target="Wt2hJdke">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.0029940119760479044</value>
+          <text>0.005988023952095809</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <transition id="sDjlsgTH">
+    <arc id="OVjhDPkd" source="PxGegREh" target="zUXC6SmX">
+     <inscription>
+       <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPN" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.0029940119760479044</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <transition id="wM7mNKC3">
      <graphics>
       <position x="350" y="240.0"/>
      </graphics>
      <name>
-      <value>Pick a complete outfit for an interview from a selection of clothing</value>
+      <text>Pick a complete outfit for an interview from a selection of clothing</text>
      </name>
      <toolspecific tool="PTPN" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
-         <value>4.312584119477973</value>
+         <text>4.312584119477973</text>
        </param>
        <param name="sigma">
-         <value>0.49953987148702467</value>
+         <text>0.49953987148702467</text>
        </param>
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="jlzuk6h3" source="xr4Y0xQT" target="sDjlsgTH">
+    <arc id="DtvZeSeL" source="8XC73r9t" target="wM7mNKC3">
      <inscription>
-      <value>1</value>
+      <text>1</text>
      </inscription>
     </arc>
-    <arc id="8CzYuXS4" source="sDjlsgTH" target="lcO4jtkM">
+    <arc id="27d8Ym7W" source="wM7mNKC3" target="UWBXPj5Q">
      <inscription>
-       <value>1</value>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <value>0.9702380952380952</value>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="Z9L5cUIb" source="sDjlsgTH" target="Cah3fyhX">
-     <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.023809523809523808</value>
+          <text>0.9702380952380952</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="pirx8kVe" source="sDjlsgTH" target="pZGkhUfQ">
+    <arc id="PgSYJGVR" source="wM7mNKC3" target="i3HmwjPF">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.002976190476190476</value>
+          <text>0.023809523809523808</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="FGTMRajJ" source="sDjlsgTH" target="SLzL6R2q">
+    <arc id="dV77xChQ" source="wM7mNKC3" target="C4BpMBJL">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.002976190476190476</value>
+          <text>0.002976190476190476</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <transition id="a7itbiMO">
+    <arc id="ekTc6Paf" source="wM7mNKC3" target="qeSEwyT9">
+     <inscription>
+       <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPN" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.002976190476190476</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <transition id="ExQhgsbf">
      <graphics>
       <position x="400" y="240.0"/>
      </graphics>
      <name>
-      <value>Check the wattage of a desk lamp and replace the bulb</value>
+      <text>Check the wattage of a desk lamp and replace the bulb</text>
      </name>
      <toolspecific tool="PTPN" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
-         <value>4.525812480190735</value>
+         <text>4.525812480190735</text>
        </param>
        <param name="sigma">
-         <value>0.786589593276678</value>
+         <text>0.786589593276678</text>
        </param>
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="MEwOyPYm" source="lcO4jtkM" target="a7itbiMO">
+    <arc id="G6DuDdy6" source="UWBXPj5Q" target="ExQhgsbf">
      <inscription>
-      <value>1</value>
+      <text>1</text>
      </inscription>
     </arc>
-    <arc id="6k5i6zMj" source="a7itbiMO" target="Cah3fyhX">
+    <arc id="080rxP4o" source="ExQhgsbf" target="i3HmwjPF">
      <inscription>
-       <value>1</value>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <value>0.9755351681957186</value>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="uvOYPpQq" source="a7itbiMO" target="pZGkhUfQ">
-     <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.01834862385321101</value>
+          <text>0.9755351681957186</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="C7QK48yX" source="a7itbiMO" target="xDOGMP8j">
+    <arc id="p9r0CYt8" source="ExQhgsbf" target="C4BpMBJL">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.0061162079510703364</value>
+          <text>0.01834862385321101</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <transition id="k6lNzQn6">
+    <arc id="tR4GUWzy" source="ExQhgsbf" target="M2huexCe">
+     <inscription>
+       <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPN" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.0061162079510703364</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <transition id="efo3liSe">
      <graphics>
       <position x="450" y="240.0"/>
      </graphics>
      <name>
-      <value>Wash hands with soap at the kitchen sink</value>
+      <text>Wash hands with soap at the kitchen sink</text>
      </name>
      <toolspecific tool="PTPN" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
-         <value>3.694881228230969</value>
+         <text>3.694881228230969</text>
        </param>
        <param name="sigma">
-         <value>0.35806968295186836</value>
+         <text>0.35806968295186836</text>
        </param>
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="XdOgbWje" source="Cah3fyhX" target="k6lNzQn6">
+    <arc id="o4g4X8ix" source="i3HmwjPF" target="efo3liSe">
      <inscription>
-      <value>1</value>
+      <text>1</text>
      </inscription>
     </arc>
-    <arc id="X7EwOA8F" source="k6lNzQn6" target="pZGkhUfQ">
+    <arc id="sIIxWKEI" source="efo3liSe" target="C4BpMBJL">
      <inscription>
-       <value>1</value>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <value>0.9579579579579579</value>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="mrm4SyXS" source="k6lNzQn6" target="xDOGMP8j">
-     <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.03903903903903904</value>
+          <text>0.9579579579579579</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="QkXWM5ip" source="k6lNzQn6" target="83IbTzHG">
+    <arc id="BD0JUj3s" source="efo3liSe" target="M2huexCe">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.003003003003003003</value>
+          <text>0.03903903903903904</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <transition id="5Q4bfrCw">
+    <arc id="khFISpgK" source="efo3liSe" target="TKwkF2Xz">
+     <inscription>
+       <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPN" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.003003003003003003</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <transition id="A1oiHCzV">
      <graphics>
       <position x="500" y="240.0"/>
      </graphics>
      <name>
-      <value>Wash and dry all kitchen countertop surfaces</value>
+      <text>Wash and dry all kitchen countertop surfaces</text>
      </name>
      <toolspecific tool="PTPN" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
-         <value>5.021592735247725</value>
+         <text>5.021592735247725</text>
        </param>
        <param name="sigma">
-         <value>0.558391889106539</value>
+         <text>0.558391889106539</text>
        </param>
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="HIQTXg3z" source="pZGkhUfQ" target="5Q4bfrCw">
+    <arc id="ltIRgtaA" source="C4BpMBJL" target="A1oiHCzV">
      <inscription>
-      <value>1</value>
+      <text>1</text>
      </inscription>
     </arc>
-    <arc id="YBEi5sxW" source="5Q4bfrCw" target="xDOGMP8j">
+    <arc id="gPPH02ab" source="A1oiHCzV" target="M2huexCe">
      <inscription>
-       <value>1</value>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <value>0.9300911854103343</value>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="NMCHMLBY" source="5Q4bfrCw" target="83IbTzHG">
-     <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.0547112462006079</value>
+          <text>0.9300911854103343</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="74OBkzEC" source="5Q4bfrCw" target="Cah3fyhX">
+    <arc id="E4Y9EpyI" source="A1oiHCzV" target="TKwkF2Xz">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.015197568389057751</value>
+          <text>0.0547112462006079</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <transition id="sm4J60re">
+    <arc id="cn6gc666" source="A1oiHCzV" target="i3HmwjPF">
+     <inscription>
+       <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPN" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.015197568389057751</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <transition id="V7fuLFvQ">
      <graphics>
       <position x="550" y="240.0"/>
      </graphics>
      <name>
-      <value>Place a phone call to a recording and write down the recipe heard</value>
+      <text>Place a phone call to a recording and write down the recipe heard</text>
      </name>
      <toolspecific tool="PTPN" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
-         <value>5.411719265771756</value>
+         <text>5.411719265771756</text>
        </param>
        <param name="sigma">
-         <value>0.5449818995572653</value>
+         <text>0.5449818995572653</text>
        </param>
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="0woZtNRy" source="xDOGMP8j" target="sm4J60re">
+    <arc id="Su0K7N0Z" source="M2huexCe" target="V7fuLFvQ">
      <inscription>
-      <value>1</value>
+      <text>1</text>
      </inscription>
     </arc>
-    <arc id="yqpq4ifj" source="sm4J60re" target="83IbTzHG">
+    <arc id="nEDKnWPd" source="V7fuLFvQ" target="TKwkF2Xz">
      <inscription>
-       <value>1</value>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <value>0.9688473520249221</value>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="dvUjyzwi" source="sm4J60re" target="55JTOd0A">
-     <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.018691588785046728</value>
+          <text>0.9688473520249221</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="tDxfmtFa" source="sm4J60re" target="pZGkhUfQ">
+    <arc id="Cia7vsVG" source="V7fuLFvQ" target="IIXM60jq">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.009345794392523364</value>
+          <text>0.018691588785046728</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="Fg0rgn7y" source="sm4J60re" target="Cah3fyhX">
+    <arc id="cxRPMWx0" source="V7fuLFvQ" target="C4BpMBJL">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.003115264797507788</value>
+          <text>0.009345794392523364</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <transition id="AnJNGimf">
+    <arc id="AITS83Hu" source="V7fuLFvQ" target="i3HmwjPF">
+     <inscription>
+       <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPN" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.003115264797507788</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <transition id="5oitci0c">
      <graphics>
       <position x="600" y="240.0"/>
      </graphics>
      <name>
-      <value>Sort and fold a basketful of clothing containing men's, women's and children's articles</value>
+      <text>Sort and fold a basketful of clothing containing men's, women's and children's articles</text>
      </name>
      <toolspecific tool="PTPN" version="0.1">
       <time_function type="gamma">
        <param name="k">
-         <value>6.7737704621388515</value>
+         <text>6.7737704621388515</text>
        </param>
        <param name="theta">
-         <value>31.693692870785807</value>
+         <text>31.693692870785807</text>
        </param>
        <param name="gamma_k">
-         <value>464.068960519537</value>
+         <text>464.068960519537</text>
        </param>
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="LkILps33" source="83IbTzHG" target="AnJNGimf">
+    <arc id="aYo6NQrV" source="TKwkF2Xz" target="5oitci0c">
      <inscription>
-      <value>1</value>
+      <text>1</text>
      </inscription>
     </arc>
-    <arc id="RWoTUWYt" source="AnJNGimf" target="55JTOd0A">
+    <arc id="xGuvjNtD" source="5oitci0c" target="IIXM60jq">
      <inscription>
-       <value>1</value>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <value>0.9395770392749244</value>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="LZwg0znH" source="AnJNGimf" target="0cAD8dFh">
-     <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.0513595166163142</value>
+          <text>0.9395770392749244</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="8JNPqYZO" source="AnJNGimf" target="aCIPxUxH">
+    <arc id="UbDSaNuJ" source="5oitci0c" target="S6huLT5I">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.006042296072507553</value>
+          <text>0.0513595166163142</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="mYHkLZmB" source="AnJNGimf" target="xDOGMP8j">
+    <arc id="7ICi3iWB" source="5oitci0c" target="4Wuq9lXX">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.0030211480362537764</value>
+          <text>0.006042296072507553</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <transition id="ZlV3OGt4">
+    <arc id="FFlVXUsJ" source="5oitci0c" target="M2huexCe">
+     <inscription>
+       <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPN" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.0030211480362537764</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <transition id="t1zJmQ2U">
      <graphics>
       <position x="650" y="240.0"/>
      </graphics>
      <name>
-      <value>Prepare a bowl of oatmeal on the stovetop from the directions given in task 12</value>
+      <text>Prepare a bowl of oatmeal on the stovetop from the directions given in task 12</text>
      </name>
      <toolspecific tool="PTPN" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
-         <value>6.077372874951246</value>
+         <text>6.077372874951246</text>
        </param>
        <param name="sigma">
-         <value>0.24043356519484949</value>
+         <text>0.24043356519484949</text>
        </param>
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="4aldIUec" source="55JTOd0A" target="ZlV3OGt4">
+    <arc id="U4hMdMFW" source="IIXM60jq" target="t1zJmQ2U">
      <inscription>
-      <value>1</value>
+      <text>1</text>
      </inscription>
     </arc>
-    <arc id="1JURtaFR" source="ZlV3OGt4" target="0cAD8dFh">
+    <arc id="aJdbQHAT" source="t1zJmQ2U" target="S6huLT5I">
      <inscription>
-       <value>1</value>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <value>0.9779179810725552</value>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="6P2RTTNn" source="ZlV3OGt4" target="aCIPxUxH">
-     <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.015772870662460567</value>
+          <text>0.9779179810725552</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="KtDB2toZ" source="ZlV3OGt4" target="pZGkhUfQ">
+    <arc id="OaxOXrPa" source="t1zJmQ2U" target="4Wuq9lXX">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.0031545741324921135</value>
+          <text>0.015772870662460567</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="yM9w6vEK" source="ZlV3OGt4" target="83IbTzHG">
+    <arc id="DBEvumwL" source="t1zJmQ2U" target="C4BpMBJL">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.0031545741324921135</value>
+          <text>0.0031545741324921135</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <transition id="ZtxxUrWt">
+    <arc id="mmPRG7JP" source="t1zJmQ2U" target="TKwkF2Xz">
+     <inscription>
+       <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPN" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.0031545741324921135</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <transition id="QOywjabU">
      <graphics>
       <position x="700" y="240.0"/>
      </graphics>
      <name>
-      <value>Sort and file a small collection of billing statements</value>
+      <text>Sort and file a small collection of billing statements</text>
      </name>
      <toolspecific tool="PTPN" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
-         <value>4.641438209522428</value>
+         <text>4.641438209522428</text>
        </param>
        <param name="sigma">
-         <value>0.651505004985393</value>
+         <text>0.651505004985393</text>
        </param>
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="7vUT6xkg" source="0cAD8dFh" target="ZtxxUrWt">
+    <arc id="9Zwk4E4k" source="S6huLT5I" target="QOywjabU">
      <inscription>
-      <value>1</value>
+      <text>1</text>
      </inscription>
     </arc>
-    <arc id="tI0ruddZ" source="ZtxxUrWt" target="aCIPxUxH">
+    <arc id="unnKeGYD" source="QOywjabU" target="4Wuq9lXX">
      <inscription>
-       <value>1</value>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <value>0.978125</value>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="2sh9ULzq" source="ZtxxUrWt" target="Fp1BkDx5">
-     <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.009375</value>
+          <text>0.978125</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="kCx5Pmrk" source="ZtxxUrWt" target="SLzL6R2q">
+    <arc id="VkOjHcXF" source="QOywjabU" target="Wt2hJdke">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.00625</value>
+          <text>0.009375</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="bBpNuHWy" source="ZtxxUrWt" target="0cAD8dFh">
+    <arc id="a42Drjy9" source="QOywjabU" target="qeSEwyT9">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.003125</value>
+          <text>0.00625</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="KRT8njbs" source="ZtxxUrWt" target="YH7BDXyA">
+    <arc id="mRvu7RKL" source="QOywjabU" target="S6huLT5I">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.003125</value>
+          <text>0.003125</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <transition id="jKSXcxr8">
+    <arc id="bWaEMWRD" source="QOywjabU" target="Ym8vFv0i">
+     <inscription>
+       <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPN" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.003125</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <transition id="xWMPuMJK">
      <graphics>
       <position x="750" y="240.0"/>
      </graphics>
      <name>
-      <value>Setup hands for a card game, answer the phone and describe the rules of the game</value>
+      <text>Setup hands for a card game, answer the phone and describe the rules of the game</text>
      </name>
      <toolspecific tool="PTPN" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
-         <value>5.248975058891759</value>
+         <text>5.248975058891759</text>
        </param>
        <param name="sigma">
-         <value>0.8084129346411363</value>
+         <text>0.8084129346411363</text>
        </param>
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="d6DzST3L" source="aCIPxUxH" target="jKSXcxr8">
+    <arc id="E6BFvxm4" source="4Wuq9lXX" target="xWMPuMJK">
      <inscription>
-      <value>1</value>
+      <text>1</text>
      </inscription>
     </arc>
-    <arc id="B7PzxhRs" source="jKSXcxr8" target="SLzL6R2q">
+    <arc id="EqivcJfU" source="xWMPuMJK" target="qeSEwyT9">
      <inscription>
-       <value>1</value>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <value>0.6488888888888888</value>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="7Jxfj2Zq" source="jKSXcxr8" target="YH7BDXyA">
-     <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.1288888888888889</value>
+          <text>0.6488888888888888</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="xKS8z3sn" source="jKSXcxr8" target="jhn3OQqh">
+    <arc id="zVE5XbX9" source="xWMPuMJK" target="Ym8vFv0i">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.09333333333333334</value>
+          <text>0.1288888888888889</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="uIC06k9C" source="jKSXcxr8" target="2Bc6IkzA">
+    <arc id="V2ESITei" source="xWMPuMJK" target="NXCOtEsW">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.06666666666666667</value>
+          <text>0.09333333333333334</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="A5aKq1r5" source="jKSXcxr8" target="cd8zqhC6">
+    <arc id="GcCbYlYm" source="xWMPuMJK" target="CTthmPRv">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.03111111111111111</value>
+          <text>0.06666666666666667</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="N5qzHoQU" source="jKSXcxr8" target="Kvx1herX">
+    <arc id="rymwE0MG" source="xWMPuMJK" target="sHK7Yntz">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.022222222222222223</value>
+          <text>0.03111111111111111</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="f9iXBZhk" source="jKSXcxr8" target="0cAD8dFh">
+    <arc id="rrAhDcbB" source="xWMPuMJK" target="kOiNxlmf">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.008888888888888889</value>
+          <text>0.022222222222222223</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <transition id="nYgqRd2z">
+    <arc id="8GzsOE0J" source="xWMPuMJK" target="S6huLT5I">
+     <inscription>
+       <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPN" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.008888888888888889</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <transition id="61Uk6XVb">
      <graphics>
       <position x="800" y="240.0"/>
      </graphics>
      <name>
-      <value>Examine a bus schedule; plan a trip including length of time and when to leave</value>
+      <text>Examine a bus schedule; plan a trip including length of time and when to leave</text>
      </name>
      <toolspecific tool="PTPN" version="0.1">
       <time_function type="gamma">
        <param name="k">
-         <value>1.1597216059132036</value>
+         <text>1.1597216059132036</text>
        </param>
        <param name="theta">
-         <value>321.0130020752386</value>
+         <text>321.0130020752386</text>
        </param>
        <param name="gamma_k">
-         <value>0.9298052748452622</value>
+         <text>0.9298052748452622</text>
        </param>
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="pSNXjDYh" source="SLzL6R2q" target="nYgqRd2z">
+    <arc id="POP1BBEH" source="qeSEwyT9" target="61Uk6XVb">
      <inscription>
-      <value>1</value>
+      <text>1</text>
      </inscription>
     </arc>
-    <arc id="lD3qXa04" source="nYgqRd2z" target="Kvx1herX">
+    <arc id="JOmKpXkI" source="61Uk6XVb" target="kOiNxlmf">
      <inscription>
-       <value>1</value>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <value>0.5990990990990991</value>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="Z2U8Q3Ji" source="nYgqRd2z" target="YH7BDXyA">
-     <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.16666666666666666</value>
+          <text>0.5990990990990991</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="TWO16S3V" source="nYgqRd2z" target="2Bc6IkzA">
+    <arc id="HGYHN81l" source="61Uk6XVb" target="Ym8vFv0i">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.09009009009009009</value>
+          <text>0.16666666666666666</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="zFMZvHQ8" source="nYgqRd2z" target="cd8zqhC6">
+    <arc id="6wQtuVJZ" source="61Uk6XVb" target="CTthmPRv">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.05405405405405406</value>
+          <text>0.09009009009009009</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="oeU3ieO2" source="nYgqRd2z" target="jhn3OQqh">
+    <arc id="F35f5LGN" source="61Uk6XVb" target="sHK7Yntz">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.04504504504504504</value>
+          <text>0.05405405405405406</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="raQ8LGZD" source="nYgqRd2z" target="q7oi0iEl">
+    <arc id="PwjCy7qM" source="61Uk6XVb" target="NXCOtEsW">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.02702702702702703</value>
+          <text>0.04504504504504504</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="TqFgAU4F" source="nYgqRd2z" target="D9hlXoo9">
+    <arc id="jlapw7qG" source="61Uk6XVb" target="3QLsp8qL">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.013513513513513514</value>
+          <text>0.02702702702702703</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="eT2niJjD" source="nYgqRd2z" target="SLzL6R2q">
+    <arc id="fAlfI29u" source="61Uk6XVb" target="nIro71iz">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.0045045045045045045</value>
+          <text>0.013513513513513514</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <transition id="CvMXhEvR">
+    <arc id="FEHiCLQd" source="61Uk6XVb" target="qeSEwyT9">
+     <inscription>
+       <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPN" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.0045045045045045045</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <transition id="oforQsDG">
      <graphics>
       <position x="850" y="240.0"/>
      </graphics>
      <name>
-      <value>Count out appropriate change for bus fare</value>
+      <text>Count out appropriate change for bus fare</text>
      </name>
      <toolspecific tool="PTPN" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
-         <value>5.052007731506113</value>
+         <text>5.052007731506113</text>
        </param>
        <param name="sigma">
-         <value>1.3512064264517258</value>
+         <text>1.3512064264517258</text>
        </param>
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="iOSHKLYy" source="Kvx1herX" target="CvMXhEvR">
+    <arc id="unld6aqw" source="kOiNxlmf" target="oforQsDG">
      <inscription>
-      <value>1</value>
+      <text>1</text>
      </inscription>
     </arc>
-    <arc id="kALgShUW" source="CvMXhEvR" target="q7oi0iEl">
+    <arc id="a6arkpfW" source="oforQsDG" target="3QLsp8qL">
      <inscription>
-       <value>1</value>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <value>0.21243523316062177</value>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="loC92ILL" source="CvMXhEvR" target="YH7BDXyA">
-     <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.19170984455958548</value>
+          <text>0.21243523316062177</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="XmYDLYz7" source="CvMXhEvR" target="cd8zqhC6">
+    <arc id="wUdsDsOa" source="oforQsDG" target="Ym8vFv0i">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.17616580310880828</value>
+          <text>0.19170984455958548</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="bA9aAgxC" source="CvMXhEvR" target="jhn3OQqh">
+    <arc id="St5UDTB3" source="oforQsDG" target="sHK7Yntz">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.17098445595854922</value>
+          <text>0.17616580310880828</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="JZwi2I4H" source="CvMXhEvR" target="2Bc6IkzA">
+    <arc id="3LZaZAUl" source="oforQsDG" target="NXCOtEsW">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.10880829015544041</value>
+          <text>0.17098445595854922</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="z3JlGMoP" source="CvMXhEvR" target="D9hlXoo9">
+    <arc id="8hFjuZyG" source="oforQsDG" target="CTthmPRv">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.10362694300518134</value>
+          <text>0.10880829015544041</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="ErMcjZmP" source="CvMXhEvR" target="SLzL6R2q">
+    <arc id="iqeQLWyB" source="oforQsDG" target="nIro71iz">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.03626943005181347</value>
+          <text>0.10362694300518134</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <transition id="IckSAaww">
+    <arc id="K3prCaLn" source="oforQsDG" target="qeSEwyT9">
+     <inscription>
+       <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPN" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.03626943005181347</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <transition id="7f2RVBeI">
      <graphics>
       <position x="900" y="240.0"/>
      </graphics>
      <name>
-      <value>Find a recipe book, gather ingredients cited as necessary for a picnic meal</value>
+      <text>Find a recipe book, gather ingredients cited as necessary for a picnic meal</text>
      </name>
      <toolspecific tool="PTPN" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
-         <value>5.098883284697127</value>
+         <text>5.098883284697127</text>
        </param>
        <param name="sigma">
-         <value>0.6731679200425739</value>
+         <text>0.6731679200425739</text>
        </param>
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="yhVetnrN" source="2Bc6IkzA" target="IckSAaww">
+    <arc id="wQG7ECMA" source="CTthmPRv" target="7f2RVBeI">
      <inscription>
-      <value>1</value>
+      <text>1</text>
      </inscription>
     </arc>
-    <arc id="krdo3F4G" source="IckSAaww" target="cd8zqhC6">
+    <arc id="sWAuqB5o" source="7f2RVBeI" target="sHK7Yntz">
      <inscription>
-       <value>1</value>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <value>0.30092592592592593</value>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="GUVLiYrg" source="IckSAaww" target="jhn3OQqh">
-     <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.28703703703703703</value>
+          <text>0.30092592592592593</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="ZBbluDDp" source="IckSAaww" target="D9hlXoo9">
+    <arc id="S67L85c9" source="7f2RVBeI" target="NXCOtEsW">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.2175925925925926</value>
+          <text>0.28703703703703703</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="JWyQXxe4" source="IckSAaww" target="SLzL6R2q">
+    <arc id="hsHSkEao" source="7f2RVBeI" target="nIro71iz">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.06481481481481481</value>
+          <text>0.2175925925925926</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="wpb0ZNkV" source="IckSAaww" target="YH7BDXyA">
+    <arc id="XeHntLH5" source="7f2RVBeI" target="qeSEwyT9">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.06481481481481481</value>
+          <text>0.06481481481481481</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="1JVoxAPG" source="IckSAaww" target="q7oi0iEl">
+    <arc id="vMKzvh1E" source="7f2RVBeI" target="Ym8vFv0i">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.041666666666666664</value>
+          <text>0.06481481481481481</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="SdKURhau" source="IckSAaww" target="Kvx1herX">
+    <arc id="3ITdDgmr" source="7f2RVBeI" target="3QLsp8qL">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.023148148148148147</value>
+          <text>0.041666666666666664</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <transition id="7exc387h">
+    <arc id="4zh9zexm" source="7f2RVBeI" target="kOiNxlmf">
+     <inscription>
+       <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPN" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.023148148148148147</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <transition id="NIB1Y7PR">
      <graphics>
       <position x="950" y="240.0"/>
      </graphics>
      <name>
-      <value>Obtain a picnic basket from the hall closet and fill with all items for the trip</value>
+      <text>Obtain a picnic basket from the hall closet and fill with all items for the trip</text>
      </name>
      <toolspecific tool="PTPN" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
-         <value>5.626344373376463</value>
+         <text>5.626344373376463</text>
        </param>
        <param name="sigma">
-         <value>0.7979960995840387</value>
+         <text>0.7979960995840387</text>
        </param>
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="2eucszgv" source="jhn3OQqh" target="7exc387h">
+    <arc id="c4b0eeei" source="NXCOtEsW" target="NIB1Y7PR">
      <inscription>
-      <value>1</value>
+      <text>1</text>
      </inscription>
     </arc>
-    <arc id="DiHVzPXv" source="7exc387h" target="YH7BDXyA">
+    <arc id="6F1A7pmN" source="NIB1Y7PR" target="Ym8vFv0i">
      <inscription>
-       <value>1</value>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <value>0.2922374429223744</value>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="UJKfcnuk" source="7exc387h" target="cd8zqhC6">
-     <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.2100456621004566</value>
+          <text>0.2922374429223744</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="rPQIJ9J0" source="7exc387h" target="2Bc6IkzA">
+    <arc id="0iqHO6mh" source="NIB1Y7PR" target="sHK7Yntz">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.182648401826484</value>
+          <text>0.2100456621004566</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="IXPWGE13" source="7exc387h" target="q7oi0iEl">
+    <arc id="1drVdbU1" source="NIB1Y7PR" target="CTthmPRv">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.1232876712328767</value>
+          <text>0.182648401826484</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="YHpczyzi" source="7exc387h" target="D9hlXoo9">
+    <arc id="ruBSBjyi" source="NIB1Y7PR" target="3QLsp8qL">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.0958904109589041</value>
+          <text>0.1232876712328767</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="LS0Bmd8t" source="7exc387h" target="SLzL6R2q">
+    <arc id="5pfPPe3n" source="NIB1Y7PR" target="nIro71iz">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.0502283105022831</value>
+          <text>0.0958904109589041</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="kBQ98kEJ" source="7exc387h" target="Kvx1herX">
+    <arc id="GsPScuwo" source="NIB1Y7PR" target="qeSEwyT9">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.045662100456621</value>
+          <text>0.0502283105022831</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <transition id="lgDDq1j1">
+    <arc id="NEaTmVYG" source="NIB1Y7PR" target="kOiNxlmf">
+     <inscription>
+       <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPN" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.045662100456621</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <transition id="EJnRx19j">
      <graphics>
       <position x="1000" y="240.0"/>
      </graphics>
      <name>
-      <value>Microwave a comfort heat-pack for the bus ride</value>
+      <text>Microwave a comfort heat-pack for the bus ride</text>
      </name>
      <toolspecific tool="PTPN" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
-         <value>5.606731211208515</value>
+         <text>5.606731211208515</text>
        </param>
        <param name="sigma">
-         <value>0.60381718344928</value>
+         <text>0.60381718344928</text>
        </param>
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="WagMT5Yv" source="cd8zqhC6" target="lgDDq1j1">
+    <arc id="HkRfZvTF" source="sHK7Yntz" target="EJnRx19j">
      <inscription>
-      <value>1</value>
+      <text>1</text>
      </inscription>
     </arc>
-    <arc id="SzaKjb3Q" source="lgDDq1j1" target="2Bc6IkzA">
+    <arc id="gvw9KXWX" source="EJnRx19j" target="CTthmPRv">
      <inscription>
-       <value>1</value>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <value>0.24623115577889448</value>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="mHoJrseJ" source="lgDDq1j1" target="D9hlXoo9">
-     <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.24120603015075376</value>
+          <text>0.24623115577889448</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="r8yCUtf8" source="lgDDq1j1" target="q7oi0iEl">
+    <arc id="sWTpikPE" source="EJnRx19j" target="nIro71iz">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.11557788944723618</value>
+          <text>0.24120603015075376</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="LnoSxaBL" source="lgDDq1j1" target="Kvx1herX">
+    <arc id="4QEDtRJG" source="EJnRx19j" target="3QLsp8qL">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.11055276381909548</value>
+          <text>0.11557788944723618</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="9o8MVh5j" source="lgDDq1j1" target="YH7BDXyA">
+    <arc id="MCbHfE18" source="EJnRx19j" target="kOiNxlmf">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.11055276381909548</value>
+          <text>0.11055276381909548</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="94sqPnEC" source="lgDDq1j1" target="SLzL6R2q">
+    <arc id="IZEiDiOZ" source="EJnRx19j" target="Ym8vFv0i">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.09547738693467336</value>
+          <text>0.11055276381909548</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="srIqiYzw" source="lgDDq1j1" target="jhn3OQqh">
+    <arc id="mrQShJar" source="EJnRx19j" target="qeSEwyT9">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.08040201005025126</value>
+          <text>0.09547738693467336</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <transition id="9WxiVpLE">
+    <arc id="vz80wYcW" source="EJnRx19j" target="NXCOtEsW">
+     <inscription>
+       <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPN" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.08040201005025126</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <transition id="WKpeHdyE">
      <graphics>
       <position x="1050" y="240.0"/>
      </graphics>
      <name>
-      <value>Select a magazine to read during the trip</value>
+      <text>Select a magazine to read during the trip</text>
      </name>
      <toolspecific tool="PTPN" version="0.1">
       <time_function type="gamma">
        <param name="k">
-         <value>0.3616463534645543</value>
+         <text>0.3616463534645543</text>
        </param>
        <param name="theta">
-         <value>498.239127562568</value>
+         <text>498.239127562568</text>
        </param>
        <param name="gamma_k">
-         <value>2.4613474144865197</value>
+         <text>2.4613474144865197</text>
        </param>
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="iti4DIIf" source="YH7BDXyA" target="9WxiVpLE">
+    <arc id="xNJnNGqx" source="Ym8vFv0i" target="WKpeHdyE">
      <inscription>
-      <value>1</value>
+      <text>1</text>
      </inscription>
     </arc>
-    <arc id="vaKA5feH" source="9WxiVpLE" target="jhn3OQqh">
+    <arc id="9v7bHZa4" source="WKpeHdyE" target="NXCOtEsW">
      <inscription>
-       <value>1</value>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <value>0.2558139534883721</value>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="0glnE9i7" source="9WxiVpLE" target="2Bc6IkzA">
-     <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.2186046511627907</value>
+          <text>0.2558139534883721</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="nk7NuQ7Q" source="9WxiVpLE" target="q7oi0iEl">
+    <arc id="cSwIXOhD" source="WKpeHdyE" target="CTthmPRv">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.14418604651162792</value>
+          <text>0.2186046511627907</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="VY8WehJs" source="9WxiVpLE" target="D9hlXoo9">
+    <arc id="YTtiHpov" source="WKpeHdyE" target="3QLsp8qL">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.13488372093023257</value>
+          <text>0.14418604651162792</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="JY8cZH1F" source="9WxiVpLE" target="cd8zqhC6">
+    <arc id="eXkdB2jp" source="WKpeHdyE" target="nIro71iz">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.10697674418604651</value>
+          <text>0.13488372093023257</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="AJMeskbB" source="9WxiVpLE" target="Kvx1herX">
+    <arc id="WEnYVoIa" source="WKpeHdyE" target="sHK7Yntz">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.07441860465116279</value>
+          <text>0.10697674418604651</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="k5i06TC2" source="9WxiVpLE" target="SLzL6R2q">
+    <arc id="2TWCRmQ9" source="WKpeHdyE" target="kOiNxlmf">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.06511627906976744</value>
+          <text>0.07441860465116279</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <transition id="fbvInpv9">
+    <arc id="jLWNMaUq" source="WKpeHdyE" target="qeSEwyT9">
+     <inscription>
+       <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPN" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.06511627906976744</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <transition id="6zLMcPTP">
      <graphics>
       <position x="1100" y="240.0"/>
      </graphics>
      <name>
-      <value>Take a dose of an anti-motion sickness medication</value>
+      <text>Take a dose of an anti-motion sickness medication</text>
      </name>
      <toolspecific tool="PTPN" version="0.1">
       <time_function type="lognormal">
        <param name="mu">
-         <value>4.250857739482503</value>
+         <text>4.250857739482503</text>
        </param>
        <param name="sigma">
-         <value>1.4059245062611694</value>
+         <text>1.4059245062611694</text>
        </param>
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="n9otNTMp" source="D9hlXoo9" target="fbvInpv9">
+    <arc id="UQRtfuDZ" source="nIro71iz" target="6zLMcPTP">
      <inscription>
-      <value>1</value>
+      <text>1</text>
      </inscription>
     </arc>
-    <arc id="nX1gAcGA" source="fbvInpv9" target="q7oi0iEl">
+    <arc id="azj8mcPO" source="6zLMcPTP" target="3QLsp8qL">
      <inscription>
-       <value>1</value>
-     </inscription>
-     <toolspecific tool="PTPN" version="0.1">
-      <distribution id="0">
-        <probability>
-          <value>0.503030303030303</value>
-        </probability>
-      </distribution>
-     </toolspecific>
-    </arc>
-    <arc id="5QnApkXS" source="fbvInpv9" target="2Bc6IkzA">
-     <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.15151515151515152</value>
+          <text>0.503030303030303</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="8Y7JCTNw" source="fbvInpv9" target="jhn3OQqh">
+    <arc id="H25ulP7P" source="6zLMcPTP" target="CTthmPRv">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.12727272727272726</value>
+          <text>0.15151515151515152</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="1J9w0Crt" source="fbvInpv9" target="YH7BDXyA">
+    <arc id="WBzAMdg2" source="6zLMcPTP" target="NXCOtEsW">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.08484848484848485</value>
+          <text>0.12727272727272726</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="2ViCjglt" source="fbvInpv9" target="cd8zqhC6">
+    <arc id="aW7ygDOy" source="6zLMcPTP" target="Ym8vFv0i">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.07272727272727272</value>
+          <text>0.08484848484848485</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="EqnZtLyf" source="fbvInpv9" target="Kvx1herX">
+    <arc id="3ilh2hKC" source="6zLMcPTP" target="sHK7Yntz">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.04242424242424243</value>
+          <text>0.07272727272727272</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="6087vgIp" source="fbvInpv9" target="SLzL6R2q">
+    <arc id="TVxIcxVS" source="6zLMcPTP" target="kOiNxlmf">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.01818181818181818</value>
+          <text>0.04242424242424243</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <transition id="NjClHroZ">
+    <arc id="eHAJiBiA" source="6zLMcPTP" target="qeSEwyT9">
+     <inscription>
+       <text>1</text>
+     </inscription>
+     <toolspecific tool="PTPN" version="0.1">
+      <distribution id="0">
+        <probability>
+          <text>0.01818181818181818</text>
+        </probability>
+      </distribution>
+     </toolspecific>
+    </arc>
+    <transition id="CdkPA6hJ">
      <graphics>
       <position x="1150" y="240.0"/>
      </graphics>
      <name>
-      <value>Take the filled picnic basket toward the apartment exit, as though leaving as planned</value>
+      <text>Take the filled picnic basket toward the apartment exit, as though leaving as planned</text>
      </name>
      <toolspecific tool="PTPN" version="0.1">
       <time_function type="gamma">
        <param name="k">
-         <value>0.057700678492958506</value>
+         <text>0.057700678492958506</text>
        </param>
        <param name="theta">
-         <value>1556.14996974198</value>
+         <text>1556.14996974198</text>
        </param>
        <param name="gamma_k">
-         <value>16.80828626008945</value>
+         <text>16.80828626008945</text>
        </param>
       </time_function>
      </toolspecific>
     </transition>
-    <arc id="IwT1KXsc" source="q7oi0iEl" target="NjClHroZ">
+    <arc id="ZTNjHpeV" source="3QLsp8qL" target="CdkPA6hJ">
      <inscription>
-      <value>1</value>
+      <text>1</text>
      </inscription>
     </arc>
-    <arc id="apVm5o2w" source="NjClHroZ" target="cd8zqhC6">
+    <arc id="8r6lV8Y2" source="CdkPA6hJ" target="sHK7Yntz">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.2777777777777778</value>
+          <text>0.2777777777777778</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="CYlXN6rt" source="NjClHroZ" target="D9hlXoo9">
+    <arc id="PWArqZPe" source="CdkPA6hJ" target="nIro71iz">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.2777777777777778</value>
+          <text>0.2777777777777778</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="Jomx2aBG" source="NjClHroZ" target="SLzL6R2q">
+    <arc id="4oS3aM2z" source="CdkPA6hJ" target="qeSEwyT9">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.16666666666666666</value>
+          <text>0.16666666666666666</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="iLdLhSVx" source="NjClHroZ" target="YH7BDXyA">
+    <arc id="5FyWMwe4" source="CdkPA6hJ" target="Ym8vFv0i">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.1111111111111111</value>
+          <text>0.1111111111111111</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="BKoD77ob" source="NjClHroZ" target="jhn3OQqh">
+    <arc id="kuzjultv" source="CdkPA6hJ" target="NXCOtEsW">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.1111111111111111</value>
+          <text>0.1111111111111111</text>
         </probability>
       </distribution>
      </toolspecific>
     </arc>
-    <arc id="ujHoA9Y9" source="NjClHroZ" target="2Bc6IkzA">
+    <arc id="BYnavl9X" source="CdkPA6hJ" target="CTthmPRv">
      <inscription>
-       <value>1</value>
+       <text>1</text>
      </inscription>
      <toolspecific tool="PTPN" version="0.1">
       <distribution id="0">
         <probability>
-          <value>0.05555555555555555</value>
+          <text>0.05555555555555555</text>
         </probability>
       </distribution>
      </toolspecific>

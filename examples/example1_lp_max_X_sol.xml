@@ -34,7 +34,7 @@
   <constraint name="reach6" index="6" status="LL" slack="0" dual="0.17258876240050258"/>
   <constraint name="reach7" index="7" status="LL" slack="0" dual="-0"/>
   <constraint name="reach8" index="8" status="LL" slack="0" dual="0.17258876240050258"/>
-  <constraint name="flow9" index="9" status="LL" slack="0" dual="0.34517752480100516"/>
+  <constraint name="flow9" index="9" status="LL" slack="0" dual="-0.65482247519899484"/>
   <constraint name="flow10" index="10" status="LL" slack="0" dual="-0"/>
   <constraint name="flow11" index="11" status="LL" slack="0" dual="-0.050761806797235839"/>
   <constraint name="flow12" index="12" status="LL" slack="0" dual="-0"/>
@@ -85,6 +85,6 @@
   <variable name="x9" index="28" status="BS" value="0.10152361359447162" reducedCost="0"/>
  </variables>
  <objectiveValues>
-  <objective index="0" name="objT9" value="0.17258876240050258"/>
+  <objective index="0" name="objT0" value="0.17258876240050258"/>
  </objectiveValues>
 </CPLEXSolution>

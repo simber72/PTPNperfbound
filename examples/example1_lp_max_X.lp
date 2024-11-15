@@ -2,7 +2,7 @@
 \Problem name: 
 
 Maximize
- objT9: x5
+ objT0: x0
 Subject To
  reach0:    M0 + s0 - s5  = 1
  reach1:    M1 + s1 - s6  = 0
