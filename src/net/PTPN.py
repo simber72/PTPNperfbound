@@ -46,9 +46,9 @@ class PTPN:
 	def get_transitions(self):
 		return self.__transitions
 	
-	def __get_value(self,element):
-		"""Returns 'data' from <element><value>data</value></element>"""
-		value_node_list = element.getElementsByTagName("value")
+	def __get_text(self,element):
+		"""Returns 'data' from <element><text>data</text></element>"""
+		value_node_list = element.getElementsByTagName("text")
 		return value_node_list[0].firstChild.data
 
 	def __get_node(self,identifier,nodes_list):
@@ -73,12 +73,12 @@ class PTPN:
 		for p in place_node_list:
 			pid = p.getAttribute("id")
 			node_list = p.getElementsByTagName("name")
-			name = self.__get_value(node_list[0])
+			name = self.__get_text(node_list[0])
 			node_list = p.getElementsByTagName("initialMarking")
 			m0 = 0 #default value
 			#Initial marking field (optional)
 			if node_list.length == 1:
-				m0 = int(self.__get_value(node_list[0]))
+				m0 = int(self.__get_text(node_list[0]))
 			pl = Place(pid,name,m0)
 			self.__places.append(pl)
 
@@ -87,7 +87,7 @@ class PTPN:
 		for t in trans_node_list:
 			tid = t.getAttribute("id")
 			node_list = t.getElementsByTagName("name")
-			name = self.__get_value(node_list[0])
+			name = self.__get_text(node_list[0])
 			time_function = None #default value
 			params = None #default value
 			node_list = t.getElementsByTagName("time_function")
@@ -97,7 +97,7 @@ class PTPN:
 				params = dict()
 				for p in node_list:
 					par = p.getAttribute("name")
-					value = float(self.__get_value(p))
+					value = float(self.__get_text(p))
 					params.update({par : value})
 
 			tr = Transition(tid,name,time_function,params)
@@ -121,7 +121,7 @@ class PTPN:
 			mult = 0 #default value
 			node_list = a.getElementsByTagName("inscription")
 			if (node_list.length == 1):
-				mult = int(self.__get_value(node_list[0]))
+				mult = int(self.__get_text(node_list[0]))
 			
 			did = None #default value (P/T net arc)
 			prob = None #default value (P/T net arc)
@@ -129,7 +129,7 @@ class PTPN:
 			if (node_list.length == 1): #it is an arc with distribution
 				did = node_list[0].getAttribute("id")
 				node_list = node_list[0].getElementsByTagName("probability")
-				prob = float(self.__get_value(node_list[0]))
+				prob = float(self.__get_text(node_list[0]))
 
 			arc = Arc(aid,mult,did,prob,source,target)
 			self.__arcs.append(arc)
@@ -193,10 +193,10 @@ class PTPN:
 			ptpn += '      <position x="{0}" y="150.0"/>\n'.format(positionx)
 			ptpn += '     </graphics>\n'
 			ptpn += '     <name>\n'
-			ptpn += '      <value>{0}</value>\n'.format(p.get_name())
+			ptpn += '      <text>{0}</text>\n'.format(p.get_name())
 			ptpn += '     </name>\n'
 			ptpn += '     <initialMarking>\n'
-			ptpn += '      <value>{0}</value>\n'.format(p.get_initial_marking())
+			ptpn += '      <text>{0}</text>\n'.format(p.get_initial_marking())
 			ptpn += '     </initialMarking>\n' 
 			ptpn += '    </place>\n'
 			positionx += 50
@@ -208,23 +208,21 @@ class PTPN:
 			ptpn += '      <position x="{0}" y="240.0"/>\n'.format(positionx)
 			ptpn += '     </graphics>\n'
 			ptpn += '     <name>\n'
-			ptpn += '      <value>{0}</value>\n'.format(t.get_name())
+			ptpn += '      <text>{0}</text>\n'.format(t.get_name())
 			ptpn += '     </name>\n'
 			ptpn += '     <toolspecific tool="PTPNperfbound" version="0.1">\n'
 			ptpn += '      <time_function type="{0}">\n'.format(t.get_time_function())
 			for p, value in t.get_params().items():
 				ptpn += '       <param name="{0}">\n'.format(p)
-				ptpn += '         <value>{0}</value>\n'.format(value)
+				ptpn += '         <text>{0}</text>\n'.format(value)
 				ptpn += '       </param>\n'
 			ptpn += '      </time_function>\n'
 			bounds = t.get_bounds()
 			if bounds:
-				ptpn += '  <bounds>\n'
 				for b in bounds.keys():
-					ptpn += '    <bound>\n'
-					ptpn += '     <metric>{0}</metric> <statQ>{1}</statQ> <value>{2}</value>\n'.format(b,bounds[b][0],bounds[b][1])
-					ptpn += '    </bound>\n'
-				ptpn += '  </bounds>\n'
+					ptpn += '      <bound metric="{0}" statQ="{1}">\n'.format(b,bounds[b][0])
+					ptpn += '       <text>{0}</text>\n'.format(bounds[b][1])
+					ptpn += '      </bound>\n'
 			ptpn += '     </toolspecific>\n'
 			ptpn += '    </transition>\n'
 			positionx += 50
@@ -232,7 +230,7 @@ class PTPN:
 		for a in self.__arcs:
 			ptpn += '    <arc id="{0}" source="{1}" target="{2}">\n'.format(a.get_id(), a.get_source().get_id(), a.get_target().get_id())
 			ptpn += '     <inscription>\n'
-			ptpn += '      <value>{0}</value>\n'.format(a.get_mult())  # arc multiplicity
+			ptpn += '      <text>{0}</text>\n'.format(a.get_mult())  # arc multiplicity
 			ptpn += '     </inscription>\n'
 			did = a.get_dist_id()
 			if (did != None):
@@ -240,13 +238,11 @@ class PTPN:
 				ptpn += '     <toolspecific tool="PTPNperfbound" version="0.1">\n'
 				ptpn += '      <distribution id="{0}">\n'.format(did)
 				ptpn += '        <probability>\n'
-				ptpn += '          <value>{0}</value>\n'.format(a.get_prob())
+				ptpn += '          <text>{0}</text>\n'.format(a.get_prob())
 				ptpn += '        </probability>\n'
 				ptpn += '      </distribution>\n'
 				ptpn += '     </toolspecific>\n'
 			ptpn += '    </arc>\n'
-		#Closings
-		ptpn += '  </page>\n'
 		if self.__subnet:
 			ptpn += '  <toolspecific tool="PTPNperfbound" version="0.1">\n'
 			ptpn += '   <critical_subnet>\n'
@@ -256,6 +252,8 @@ class PTPN:
 				ptpn += '    <tr id="{0}"/>\n'.format(t.get_id())
 			ptpn += '   </critical_subnet>\n'
 			ptpn += '  </toolspecific>\n'
+		#Closings
+		ptpn += '  </page>\n'
 		ptpn += ' </net>\n'
 		ptpn += '</pnml>'
 		#Write to file

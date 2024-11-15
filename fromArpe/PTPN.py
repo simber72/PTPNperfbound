@@ -247,10 +247,10 @@ class ProbabilisticTimePetriNet:
             ptpn += '      <position x="{0}" y="150.0"/>\n'.format(positionx)
             ptpn += '     </graphics>\n'
             ptpn += '     <name>\n'
-            ptpn += '      <value>{0}</value>\n'.format(place.name)
+            ptpn += '      <text>{0}</text>\n'.format(place.name)
             ptpn += '     </name>\n'
             ptpn += '     <initialMarking>\n'
-            ptpn += '      <value>{0}</value>\n'.format(place.initial_marking)
+            ptpn += '      <text>{0}</text>\n'.format(place.initial_marking)
             ptpn += '     </initialMarking>\n' 
             ptpn += '    </place>\n'
             positionx += 50
@@ -268,21 +268,21 @@ class ProbabilisticTimePetriNet:
             ptpn += '      <position x="{0}" y="240.0"/>\n'.format(positionx)
             ptpn += '     </graphics>\n'
             ptpn += '     <name>\n'
-            ptpn += '      <value>{0}</value>\n'.format(transition.name)
+            ptpn += '      <text>{0}</text>\n'.format(transition.name)
             ptpn += '     </name>\n'
             ptpn += '     <toolspecific tool="PTPN" version="0.1">\n'
             ptpn += '      <time_function type="{0}">\n'.format(time_func_type)
             if isinstance(parameters,list):
                 ptpn += '       <param name="min">\n'
-                ptpn += '         <value>{0}</value>\n'.format(parameters[0])
+                ptpn += '         <text>{0}</text>\n'.format(parameters[0])
                 ptpn += '       </param>\n'
                 ptpn += '       <param name="max">\n'
-                ptpn += '         <value>{0}</value>\n'.format(parameters[1])
+                ptpn += '         <text>{0}</text>\n'.format(parameters[1])
                 ptpn += '       </param>\n'
             if isinstance(parameters,Mapping):
                 for param, value in zip(parameters.keys(), parameters.values()):
                     ptpn += '       <param name="{0}">\n'.format(param)
-                    ptpn += '         <value>{0}</value>\n'.format(value)
+                    ptpn += '         <text>{0}</text>\n'.format(value)
                     ptpn += '       </param>\n'
             ptpn += '      </time_function>\n'
             ptpn += '     </toolspecific>\n'
@@ -294,7 +294,7 @@ class ProbabilisticTimePetriNet:
                     aid = self.generate_custom_id()
                     ptpn += '    <arc id="{0}" source="{1}" target="{2}">\n'.format(aid, place_ids[place.name], trans_ids[transition.name])
                     ptpn += '     <inscription>\n'
-                    ptpn += '      <value>{0}</value>\n'.format(transition.pre[place])  # arc weight
+                    ptpn += '      <text>{0}</text>\n'.format(transition.pre[place])  # arc weight
                     ptpn += '     </inscription>\n'
                     ptpn += '    </arc>\n'
             #Output arcs
@@ -306,12 +306,12 @@ class ProbabilisticTimePetriNet:
                             aid = self.generate_custom_id()
                             ptpn += '    <arc id="{0}" source="{1}" target="{2}">\n'.format(aid, trans_ids[transition.name], place_ids[place.name])
                             ptpn += '     <inscription>\n'
-                            ptpn += '       <value>{0}</value>\n'.format(outcome[place])
+                            ptpn += '       <text>{0}</text>\n'.format(outcome[place])
                             ptpn += '     </inscription>\n'
                             ptpn += '     <toolspecific tool="PTPN" version="0.1">\n'
                             ptpn += '      <distribution id="{0}">\n'.format(did)
                             ptpn += '        <probability>\n'
-                            ptpn += '          <value>{0}</value>\n'.format(probability)
+                            ptpn += '          <text>{0}</text>\n'.format(probability)
                             ptpn += '        </probability>\n'
                             ptpn += '      </distribution>\n'
                             ptpn += '     </toolspecific>\n'

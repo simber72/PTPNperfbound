@@ -1086,6 +1086,31 @@
       </distribution>
      </toolspecific>
     </arc>
+    <transition id="XXXX">
+     <graphics>
+      <position x="108" y="310.0"/>
+     </graphics>
+     <name>
+      <text>repeat</text>
+     </name>
+     <toolspecific tool="PTPN" version="0.1">
+      <time_function type="constant">
+       <param name="k">
+         <text>0.0</text>
+       </param>
+      </time_function>
+     </toolspecific>
+    </transition>
+    <arc id="from_endp_to_endt" source="y2pHcJA3" target="XXXX">
+     <inscription>
+      <text>1</text>
+     </inscription>
+    </arc>
+    <arc id="from_endt_to_start" source="XXXX" target="QeS01ilb">
+     <inscription>
+      <text>1</text>
+     </inscription>
+    </arc>
   </page>
  </net>
 </pnml>
