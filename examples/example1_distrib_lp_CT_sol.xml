@@ -1,0 +1,54 @@
+<?xml version = "1.0" encoding="UTF-8" standalone="yes"?>
+<CPLEXSolution version="1.2">
+ <header
+   problemName=""
+   objectiveValue="10.147079999999997"
+   solutionTypeValue="1"
+   solutionTypeString="basic"
+   solutionStatusValue="1"
+   solutionStatusString="optimal"
+   solutionMethodString="dual"
+   primalFeasible="1"
+   dualFeasible="1"
+   simplexIterations="0"
+   writeLevel="1"/>
+ <quality
+   epRHS="9.9999999999999995e-07"
+   epOpt="9.9999999999999995e-07"
+   maxPrimalInfeas="0"
+   maxDualInfeas="0"
+   maxPrimalResidual="0"
+   maxDualResidual="4.4408920985006262e-16"
+   maxX="1"
+   maxPi="10.147079999999997"
+   maxSlack="0"
+   maxRedCost="3.4805799999999971"
+   kappa="12"/>
+ <linearConstraints>
+  <constraint name="pinv0" index="0" status="LL" slack="0" dual="-0"/>
+  <constraint name="pinv1" index="1" status="LL" slack="0" dual="-4.1472799999999967"/>
+  <constraint name="pinv2" index="2" status="LL" slack="0" dual="-1.9998000000000002"/>
+  <constraint name="pinv3" index="3" status="LL" slack="0" dual="-4.7059199999999981"/>
+  <constraint name="pinv4" index="4" status="LL" slack="0" dual="-1.4411599999999996"/>
+  <constraint name="pinv5" index="5" status="LL" slack="0" dual="-6.1470799999999972"/>
+  <constraint name="pinv6" index="6" status="LL" slack="0" dual="-3.4805799999999971"/>
+  <constraint name="pinv7" index="7" status="BS" slack="0" dual="-0"/>
+  <constraint name="pinv8" index="8" status="BS" slack="0" dual="-0"/>
+  <constraint name="pinv9" index="9" status="BS" slack="0" dual="-0"/>
+  <constraint name="inimark10" index="10" status="LL" slack="0" dual="10.147079999999997"/>
+ </linearConstraints>
+ <variables>
+  <variable name="y0" index="0" status="BS" value="1" reducedCost="0"/>
+  <variable name="y1" index="1" status="BS" value="0" reducedCost="0"/>
+  <variable name="y2" index="2" status="BS" value="1" reducedCost="0"/>
+  <variable name="y3" index="3" status="BS" value="0" reducedCost="0"/>
+  <variable name="y4" index="4" status="BS" value="1" reducedCost="0"/>
+  <variable name="y5" index="5" status="BS" value="0" reducedCost="0"/>
+  <variable name="y6" index="6" status="BS" value="1" reducedCost="0"/>
+  <variable name="y7" index="7" status="LL" value="0" reducedCost="-3.4805799999999971"/>
+  <variable name="y8" index="8" status="BS" value="1" reducedCost="0"/>
+ </variables>
+ <objectiveValues>
+  <objective index="0" name="" value="10.147079999999999"/>
+ </objectiveValues>
+</CPLEXSolution>

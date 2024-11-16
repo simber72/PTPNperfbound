@@ -154,7 +154,7 @@
      <toolspecific tool="PTPN" version="0.1">
       <time_function type="interval">
        <param name="min">
-         <text>0.0</text>
+         <text>1.0</text>
        </param>
        <param name="max">
          <text>5.0</text>
@@ -235,7 +235,7 @@
       <text>T7</text>
      </name>
      <toolspecific tool="PTPN" version="0.1">
-      <time_function type="interval">
+      <time_function type="uniform">
        <param name="min">
          <text>0.0</text>
        </param>

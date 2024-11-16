@@ -47,9 +47,12 @@ class Transition:
 		elif self.__time_function == "lognormal":
 			#Expected two params: mu (mean), sigma (std deviation)
 			return math.exp(self.__params['sigma'] ** 2 / 2 + self.__params['mu'])
-		elif self.__time_function == "interval":
+		elif self.__time_function == "uniform":
 			#Expected two params: min, max (uniform distribution)
 			return (self.__params['max'] + self.__params['min']) / 2
+		elif self.__time_function == "interval":
+			#earliest firing time
+			return (self.__params)['min']
 		elif self.__time_function == "constant":
 			#Expected one param: k (constant time)
 			return self.__params['k']
