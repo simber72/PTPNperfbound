@@ -34,7 +34,10 @@ class Transition:
 		return self.__params
 
 	def get_delay(self):
-		"""Returns the firing <mean> delay depending on the time function"""
+		"""
+		Returns the firing <mean> delay depending on the time function.
+		In case of just "interval" (not distribution), returns the earliest firing time 
+		"""
 		if self.__time_function == "exponential":
 			#Expected one param: lambda
 			return 1 / self.__params['lambda']
@@ -51,7 +54,7 @@ class Transition:
 			#Expected two params: min, max (uniform distribution)
 			return (self.__params['max'] + self.__params['min']) / 2
 		elif self.__time_function == "interval":
-			#earliest firing time
+			#Expected two params: min, max (just interval)
 			return (self.__params)['min']
 		elif self.__time_function == "constant":
 			#Expected one param: k (constant time)
