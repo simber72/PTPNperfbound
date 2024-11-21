@@ -58,16 +58,16 @@ classDiagram
 		-page_id
 		-name
 		-subnet
-		+get_name()
-		+get_arcs()
-		+get_transitions()
-		+get_places
 		+import_pnml()
 		+export_pnml()
 		+export_dot()
 		+print_net()
 		+set_critical_subnet()
 		+get_critical_subnet()
+		+get_name()
+		+get_arcs()
+		+get_transitions()
+		+get_places()
 	}
 	class Arc{
 		-id
@@ -98,13 +98,13 @@ classDiagram
 		-time_function
 		-params
 		-bounds
+		+get_delay()
 		+set_bounds()
 		+get_bounds()
+		+get_id()
 		+get_name()
 		+get_time_function()
 		+get_params()
-		+get_delay()
-
 	}
 
 	PTPN *--"1..*" Node
@@ -157,6 +157,8 @@ classDiagram
 		-delta
 		-pid_to_dokid
 		-tid_to_dokid
+		+retrieve_net_structure()
+		+print_net_structure()
 		+get_m0()
 		+get_b()
 		+get_f()
@@ -164,11 +166,8 @@ classDiagram
 		+get_delta()
 		+get_pid_to_dokid()
 		+get_tid_to_dokid()
-		+retrieve_net_structure()
-		+print_net_structure()
 		-identify_arc()
 		-update_post_set()
-
 	}
 
 	CPLEX_LPsolver <|.. LPsolver
