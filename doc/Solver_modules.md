@@ -150,11 +150,11 @@ classDiagram
 		-update_net()
 	}
 	class ParamsExtractor{
-		-m0
-		-b
-		-f
-		-w
-		-delta
+		-m0: scipy.sparse.dok_array
+		-b: scipy.sparse.dok_array
+		-f: scipy.sparse.dok_array
+		-w: scipy.sparse.dok_array
+		-delta: scipy.sparse.dok_array
 		-pid_to_dokid
 		-tid_to_dokid
 		+retrieve_net_structure()
