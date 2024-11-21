@@ -39,7 +39,7 @@ s5 ==>|yes| s6[Generate & Solve LP_CT problem for transition t]
 s6 ==> s7[Synthesize LP_CT optimal solution]
 s6 -.-> d4[(LP_CT model .lp/solution .xml)]
 s7 ==> s8
-s5 -->|no| s8[Export PTPN]
+s5 ==>|no| s8[Export PTPN]
 s8 -.->d3[(PTPN with performance results .pnml/.dot)]
 classDef data  fill:#E5FFCC;
 class d1,d2,d3,d4 data;
