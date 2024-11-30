@@ -124,6 +124,7 @@ classDiagram
 		solve_lp()
 		export_lp()
 		export_lp_solution()
+		print_lp_solution()
 	}
 	<<interface>> LPsolver
 
@@ -137,8 +138,7 @@ classDiagram
 		+solve_lp()
 		+export_lp()
 		+export_lp_solution()
-		+print_lp_max_X_solution()
-		+print_lp_min_CT_solution()
+		+print_lp_solution()
 		+get_LpmaxX()
 		+get_LpminCT()
 		-check_conflict()
@@ -150,6 +150,8 @@ classDiagram
 		-get_name()
 		-identify_critical_subnet()
 		-update_net()
+		-print_lp_max_X_solution()
+		-print_lp_min_CT_solution()
 	}
 	class ParamsExtractor{
 		-m0: scipy.sparse.dok_array
