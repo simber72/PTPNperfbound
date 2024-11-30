@@ -87,9 +87,9 @@ def ptpnbound(name, tname, lpmodel, lpoutput, output, verbose):
 
             #Print solutions on stdin
             if verbose:
-                lpgen.print_lp_max_X_solution(ptpn)
+                lpgen.print_lp_solution(ptpn,'max')
                 if lpgen.get_LpminCT() != None:
-                    lpgen.print_lp_min_CT_solution(ptpn)
+                    lpgen.print_lp_solution(ptpn,'min')
 
 
 

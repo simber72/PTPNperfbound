@@ -17,3 +17,16 @@ class LPsolver(ABC):
 	def solve_lp(self):
 		pass
 
+	@abstractmethod
+	def export_lp(self, pb, aFilename):
+		pass
+
+	@abstractmethod
+	def export_lp_solution(self, pb, aFilename):
+		pass
+
+	@abstractmethod
+	def print_lp_solution(self, aPTPN, type_of_prob):
+		pass
+
+

@@ -22,15 +22,87 @@ class CPLEX_LPsolver(LPsolver):
 		self.__prob_type = type_of_prob
 		self.__prob = cplex.Cplex() #LP max X
 		self.__ct_prob = None #LP min CT
-		#print("new CPLEX problem instance created")
 		self.__pe = ParamsExtractor()
+		##############################################################
+
+	def populate_lp(self, ptpn: PTPN):
+		#print("LP population of a ", self.__prob_type, " problem.")		
+		
+		#retrieve_net_structure(self, ptpn : PTPN)
+		self.__pe.retrieve_net_structure(ptpn)
+
+		#set problem name
+		self.__prob.objective.set_name("obj" + self.__tr_name)
+		#Debug
+		print("Problem name:", self.__prob.objective.get_name())
+
+		#set type of problem
+		if self.__prob_type == "min":
+			self.__prob.objective.set_sense(self.__prob.objective.sense.minimize)
+			
+		else:
+			self.__prob.objective.set_sense(self.__prob.objective.sense.maximize)
+
+		#Debug
+		#print("Problem objective sense: ", self.__prob.objective.sense[self.__prob.objective.get_sense()])					
+
+		self.__generate_lpX()
+		##############################################################
+
+	def solve_lp(self, ptpn: PTPN):
+		#Solve the model
+		print("Solving the LP problem...")
+
+		try:
+			self.__prob.solve()
+			#Debug: display solutions
+			print("====================================================")
+			print("Solution status: ", self.__prob.solution.get_status()) # 1=optimal solution found
+			print("Throughput of ", self.__tr_name, ":" ,self.__prob.solution.get_objective_value())				
+			#Update PTPN
+			self.__update_net(ptpn,"X")
+			
+		except CplexError as exc:
+			raise
+
+		if self.__prob.solution.get_objective_value() > 0: 
+			#Identification of the reference transitions (from tr_name->tr_id->tr_dokid)
+			tid2dokid = self.__pe.get_tid_to_dokid()
+			trans = ptpn.get_transitions()
+			values = self.__prob.solution.get_values()
+			for k in tid2dokid.keys():
+				tr_name = self.__get_name(trans,k)
+				if tr_name == self.__tr_name:
+					t_ref=tid2dokid[k] 
+			#Identification of the slowest subnet		
+			self.__identify_critical_subnet(values, t_ref, ptpn)
+		else:
+			print("The net is not live.")
+		##############################################################
+
+	def export_lp(self, pb, aFilename):
+		#print("Export generated LP")
+		pb.write(aFilename)
+		##############################################################
+
+	def export_lp_solution(self, pb, aFilename):
+		pb.solution.write(aFilename)
+		##############################################################
+
+	def print_lp_solution(self, ptpn: PTPN, type_of_prob):
+		if type_of_prob == 'max':
+			self.__print_lp_max_X_solution(ptpn)
+		else:
+			self.__print_lp_min_CT_solution(ptpn)
 		##############################################################
 
 	def get_LpmaxX(self):
 		return self.__prob 
+		##############################################################
 
 	def get_LpminCT(self):
 		return self.__ct_prob
+		##############################################################
 
 	def __check_conflict(self, tr, ecs, B):
 		np = B.shape[0]
@@ -283,32 +355,6 @@ class CPLEX_LPsolver(LPsolver):
 		except CplexError as exc:
 			raise
 		
-		##############################################################
-
-	def populate_lp(self, ptpn: PTPN):
-		#print("LP population of a ", self.__prob_type, " problem.")		
-		
-		#retrieve_net_structure(self, ptpn : PTPN)
-		self.__pe.retrieve_net_structure(ptpn)
-
-		#set problem name
-		self.__prob.objective.set_name("obj" + self.__tr_name)
-		#Debug
-		print("Problem name:", self.__prob.objective.get_name())
-
-		#set type of problem
-		if self.__prob_type == "min":
-			self.__prob.objective.set_sense(self.__prob.objective.sense.minimize)
-			
-		else:
-			self.__prob.objective.set_sense(self.__prob.objective.sense.maximize)
-
-		#Debug
-		#print("Problem objective sense: ", self.__prob.objective.sense[self.__prob.objective.get_sense()])					
-
-		self.__generate_lpX()
-		##############################################################
-
 	def __update_net(self, ptpn: PTPN, metric):
 		#Update transition metric
 		trans = ptpn.get_transitions()
@@ -348,48 +394,8 @@ class CPLEX_LPsolver(LPsolver):
 					subnet_trans.add(tr)					
 			ptpn.set_critical_subnet(dict({'places': subnet_places, 'trans': subnet_trans}))
 			
-	def solve_lp(self, ptpn: PTPN):
-		#Solve the model
-		print("Solving the LP problem...")
 
-		try:
-			self.__prob.solve()
-			#Debug: display solutions
-			print("====================================================")
-			print("Solution status: ", self.__prob.solution.get_status()) # 1=optimal solution found
-			print("Throughput of ", self.__tr_name, ":" ,self.__prob.solution.get_objective_value())				
-			#Update PTPN
-			self.__update_net(ptpn,"X")
-			
-		except CplexError as exc:
-			raise
-
-		if self.__prob.solution.get_objective_value() > 0: 
-			#Identification of the reference transitions (from tr_name->tr_id->tr_dokid)
-			tid2dokid = self.__pe.get_tid_to_dokid()
-			trans = ptpn.get_transitions()
-			values = self.__prob.solution.get_values()
-			for k in tid2dokid.keys():
-				tr_name = self.__get_name(trans,k)
-				if tr_name == self.__tr_name:
-					t_ref=tid2dokid[k] 
-			#Identification of the slowest subnet		
-			self.__identify_critical_subnet(values, t_ref, ptpn)
-		else:
-			print("The net is not live.")
-
-		##############################################################
-
-	def export_lp(self, pb, aFilename):
-		#print("Export generated LP")
-		pb.write(aFilename)
-		##############################################################
-
-	def export_lp_solution(self, pb, aFilename):
-		pb.solution.write(aFilename)
-		##############################################################
-
-	def print_lp_max_X_solution(self, ptpn: PTPN):
+	def __print_lp_max_X_solution(self,ptpn: PTPN):
 		#Print optimal solution using PTPN place/transition names
 		print("Solution:")
 		values = self.__prob.solution.get_values()
@@ -409,7 +415,7 @@ class CPLEX_LPsolver(LPsolver):
 				print("x(", tr_name,"):",values[np+nt+int(k)])
 		print("====================================================")
 
-	def print_lp_min_CT_solution(self,ptpn: PTPN):
+	def __print_lp_min_CT_solution(self,ptpn: PTPN):
 		#Slowest subnet from the updated PTPN
 		print("Places of the slowest subnet:")
 		subnet = ptpn.get_critical_subnet()
