@@ -122,6 +122,8 @@ classDiagram
 	class LPsolver{
 		populate_lp()
 		solve_lp()
+		export_lp()
+		export_lp_solution()
 	}
 	<<interface>> LPsolver
 
